@@ -2,8 +2,8 @@ import urllib.request
 import sys
 from bs4 import BeautifulSoup
 
-in_fname = "NASDAQ.txt"
-out_fname = "nasdaq.txt"
+in_fname = "nasdaq.txt"
+out_fname = "nasdaq_clean.txt"
 price_max = 7.00
 
 prev_stocks = []
