@@ -1,1 +1,1 @@
-I think I might be selling out
+Scraping data from stock and options data from Yahoo and Marketwatch and using them to build options trading algorithms.
