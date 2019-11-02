@@ -6,10 +6,11 @@ import json
 stocks_file = "stocks.txt"
 price_max = 7.00
 volume_min = 10
-expire_dates= [1573171200, 1573776000]
+nweeks = 3
 out_file = "data.json"
 save_count = 20
 
+expire_dates= [ (1573171200 + 604800*i) for i in range(nweeks) ]
 
 stocks = open(stocks_file).read().split("\n")[:-1]
 
@@ -54,12 +55,12 @@ try:
           volume = toi(row.contents[8])
 
           if strike <= curr_price and volume > volume_min:
-            profit_b = bid + strike - curr_price
-            profit_a = ask + strike - curr_price
-            profit_l = last_price + strike - curr_price
-            e_b = profit_b / (w*curr_price)
-            e_a = profit_a / (w*curr_price)
-            e_l = profit_l / (w*curr_price)
+            profit_b = (bid + strike - curr_price) / w
+            profit_a = (ask + strike - curr_price) / w
+            profit_l = (last_price + strike - curr_price) / w
+            e_b = profit_b / (curr_price)
+            e_a = profit_a / (curr_price)
+            e_l = profit_l / (curr_price)
 
             data.append({ "stock": stock, "curr_price": curr_price, "expiration_date": expire_dates[date_i], "strike": strike, 
                           "last_price": last_price, "bid": bid, "ask": ask, "volume": volume, 
@@ -83,7 +84,6 @@ try:
         print("No data")
     else:
       print("Too high price for " + stock)
-
     print("")
 except KeyboardInterrupt:
   json.dump(data[-save_count:], open(out_file, "w"))
