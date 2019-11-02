@@ -2,8 +2,8 @@ import urllib.request
 import sys
 from bs4 import BeautifulSoup
 
-in_fname = "NYSE.txt"
-out_fname = "stocks.txt"
+in_fname = "NASDAQ.txt"
+out_fname = "nasdaq.txt"
 price_max = 7.00
 
 prev_stocks = []
@@ -27,7 +27,7 @@ output = open(out_fname, "a")
 for line in lines[1:]:
   stock = line.split("\t")[0]
 
-  if stock > prev_stocks[-1]:
+  if not prev_stocks or stock > prev_stocks[-1]:
     try: 
       curr_url = "https://www.marketwatch.com/investing/stock/" + stock.lower()
       curr_html = urllib.request.urlopen(curr_url).read() 
