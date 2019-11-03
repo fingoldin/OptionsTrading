@@ -9,11 +9,21 @@ from multiprocessing import Pool
 start_time = time.time()
 
 stocks_files = ["nasdaq_clean.txt", "nyse_clean.txt"]
+priority_stock_files = ["priority_ebid_stocks.txt"]
 price_max = 7.00
 volume_min = 10
 
-
 stocks = []
+nonpriority = []
+for stocks_file in priority_stock_files:
+    stocks.extend(open(stocks_file, "r", encoding="ascii").read().split("\n")[:-1])
+if (not input("Hit enter for full scrape")):
+    for stocks_file in stocks_files:
+        lst = open(stocks_file, "r", encoding="ascii").read().split("\n")
+        nonpriority.extend([s for s in lst if s not in stocks and s not in nonpriority])
+nonpriority.sort()
+stocks.extend(nonpriority)
+
 bad_stocks = []
 rare_stocks = []
 bad_stocks.extend(open("bad_stocks.txt", "r", encoding="ascii").read().split("\n")[:-1])
@@ -23,12 +33,8 @@ fp = open("data_parallel.txt", "w")
 fp.write("")
 fp.close()
 
-for stocks_file in stocks_files:
-  stocks.extend(open(stocks_file, "r", encoding="ascii").read().split("\n")[:-1])
-
 stocks = [s.replace("\x00","") for s in stocks]
 stocks = [s for s in stocks if s not in bad_stocks]
-stocks.sort()
 
 def clean(v):
   return v.replace("-","0").replace(",","")
