@@ -10,7 +10,6 @@ nweeks = 8
 out_file = "data.json"
 save_count = 20
 
-
 expire_dates= [ (1573171200 + 604800*i) for i in range(nweeks) ]
 
 stocks = []
@@ -68,35 +67,49 @@ try:
           ask = tof(row.contents[5])
           volume = toi(row.contents[8])
 
-          if strike <= curr_price and volume > volume_min:
-            profit_b = (bid + strike - curr_price) / w
-            profit_a = (ask + strike - curr_price) / w
-            profit_l = (last_price + strike - curr_price) / w
+          if volume > volume_min:
+            profit_b = bid / w
+            profit_a = ask / w
+            profit_l = last_price / w
+            in_mon = False
+
+            if strike <= curr_price:
+              profit_b = (bid + strike - curr_price) / w
+              profit_a = (ask + strike - curr_price) / w
+              profit_l = (last_price + strike - curr_price) / w
+              in_mon = True
+            
             e_b = profit_b / (curr_price)
             e_a = profit_a / (curr_price)
             e_l = profit_l / (curr_price)
 
-            data.append({ "stock": stock, "curr_price": curr_price, "week": w, "expiration_date": expire_dates[date_i], "strike": strike, 
+            break_even = last_price / curr_price
+
+            data.append({ "in_money": in_mon, "stock": stock, "curr_price": curr_price, "week": w, "expiration_date": expire_dates[date_i], "strike": strike, 
                           "last_price": last_price, "bid": bid, "ask": ask, "volume": volume, 
                           "profit_a": profit_a, "profit_b": profit_b, "profit_l": profit_l,
-                          "e_b": e_b, "e_a": e_a, "e_l": e_l })
-            
+                          "e_b": e_b, "e_a": e_a, "e_l": e_l, "break_even": break_even })
+              
             data.sort(key=lambda x: x["e_b"])
             json.dump(data[-save_count:], open(out_file, "w"))
 
       print("Processed " + stock)
       if data:
         data.sort(key=lambda x: x["e_b"])
-        print("Best e_bid: %f, stock: %s, strike price: %f, bid: %f, curr_price: %f, expire_weeks: %d" % (data[-1]["e_b"], data[-1]["stock"], data[-1]["strike"], data[-1]["bid"], data[-1]["curr_price"], data[-1]["week"]))
+        m = "In" if data[-1]["in_money"] else "Out"
+        print("Best %s e_bid: %f, stock: %s, strike price: %f, bid: %f, curr_price: %f, expire_weeks: %d" % (m, data[-1]["e_b"], data[-1]["stock"], data[-1]["strike"], data[-1]["bid"], data[-1]["curr_price"], data[-1]["week"]))
 
         data.sort(key=lambda x: x["e_a"])
-        print("Best e_ask: %f, stock: %s, strike price: %f, ask: %f, curr_price: %f, expire_weeks: %d" % (data[-1]["e_a"], data[-1]["stock"], data[-1]["strike"], data[-1]["ask"], data[-1]["curr_price"], data[-1]["week"]))
+        m = "In" if data[-1]["in_money"] else "Out"
+        print("Best %s e_ask: %f, stock: %s, strike price: %f, ask: %f, curr_price: %f, expire_weeks: %d" % (m, data[-1]["e_a"], data[-1]["stock"], data[-1]["strike"], data[-1]["ask"], data[-1]["curr_price"], data[-1]["week"]))
 
         data.sort(key=lambda x: 0.5*(x["e_a"]+x["e_b"]))
-        print("Best e_mean: %f, stock: %s, strike price: %f, mean: %f, curr_price: %f, expire_weeks: %d" % (0.5*(data[-1]["e_a"]+data[-1]["e_b"]), data[-1]["stock"], data[-1]["strike"], 0.5*(data[-1]["bid"]+data[-1]["ask"]), data[-1]["curr_price"], data[-1]["week"]))
+        m = "In" if data[-1]["in_money"] else "Out"
+        print("Best %s e_mean: %f, stock: %s, strike price: %f, mean: %f, curr_price: %f, expire_weeks: %d" % (m, 0.5*(data[-1]["e_a"]+data[-1]["e_b"]), data[-1]["stock"], data[-1]["strike"], 0.5*(data[-1]["bid"]+data[-1]["ask"]), data[-1]["curr_price"], data[-1]["week"]))
         
         data.sort(key=lambda x: x["e_l"])
-        print("Best e_last: %f, stock: %s, strike price: %f, last: %f, curr_price: %f, expire_weeks: %d" % (data[-1]["e_l"], data[-1]["stock"], data[-1]["strike"], data[-1]["last_price"], data[-1]["curr_price"], data[-1]["week"]))
+        m = "In" if data[-1]["in_money"] else "Out"
+        print("Best %s e_last: %f, stock: %s, strike price: %f, last: %f, curr_price: %f, expire_weeks: %d" % (m, data[-1]["e_l"], data[-1]["stock"], data[-1]["strike"], data[-1]["last_price"], data[-1]["curr_price"], data[-1]["week"]))
       else:
         print("No data")
     else:
