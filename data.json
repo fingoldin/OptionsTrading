@@ -1,1 +1,120 @@
-[{"in_money": false, "stock": "FTR", "curr_price": 0.99, "week": 2, "expiration_date": 1573776000, "strike": 1.0, "last_price": 0.13, "bid": 0.1, "ask": 0.15, "volume": 252, "profit_a": 0.075, "profit_b": 0.05, "profit_l": 0.065, "e_b": 0.05050505050505051, "e_a": 0.07575757575757576, "e_l": 0.06565656565656566, "break_even": 0.13131313131313133}, {"in_money": true, "stock": "AUPH", "curr_price": 5.13, "week": 7, "expiration_date": 1576800000, "strike": 5.0, "last_price": 1.91, "bid": 1.95, "ask": 2.0, "volume": 80, "profit_a": 0.2671428571428572, "profit_b": 0.26000000000000006, "profit_l": 0.25428571428571434, "e_b": 0.05068226120857701, "e_a": 0.052074631021999454, "e_l": 0.04956836535783905, "break_even": 0.3723196881091618}, {"in_money": false, "stock": "PCG", "curr_price": 6.35, "week": 3, "expiration_date": 1574380800, "strike": 6.5, "last_price": 1.04, "bid": 0.97, "ask": 1.18, "volume": 132, "profit_a": 0.3933333333333333, "profit_b": 0.3233333333333333, "profit_l": 0.3466666666666667, "e_b": 0.050918635170603674, "e_a": 0.06194225721784777, "e_l": 0.05459317585301838, "break_even": 0.16377952755905514}, {"in_money": true, "stock": "WLL", "curr_price": 6.79, "week": 1, "expiration_date": 1573171200, "strike": 6.5, "last_price": 0.69, "bid": 0.64, "ask": 0.73, "volume": 207, "profit_a": 0.4400000000000004, "profit_b": 0.34999999999999964, "profit_l": 0.39999999999999947, "e_b": 0.05154639175257727, "e_a": 0.06480117820324012, "e_l": 0.05891016200294543, "break_even": 0.10162002945508099}, {"in_money": false, "stock": "MNK", "curr_price": 3.37, "week": 2, "expiration_date": 1573776000, "strike": 3.5, "last_price": 0.45, "bid": 0.35, "ask": 0.5, "volume": 18, "profit_a": 0.25, "profit_b": 0.175, "profit_l": 0.225, "e_b": 0.05192878338278931, "e_a": 0.07418397626112759, "e_l": 0.06676557863501484, "break_even": 0.13353115727002968}, {"in_money": false, "stock": "INFN", "curr_price": 5.68, "week": 1, "expiration_date": 1573171200, "strike": 6.0, "last_price": 0.35, "bid": 0.3, "ask": 0.45, "volume": 36, "profit_a": 0.45, "profit_b": 0.3, "profit_l": 0.35, "e_b": 0.0528169014084507, "e_a": 0.07922535211267606, "e_l": 0.061619718309859156, "break_even": 0.061619718309859156}, {"in_money": true, "stock": "PCG", "curr_price": 6.35, "week": 1, "expiration_date": 1573171200, "strike": 6.0, "last_price": 0.7, "bid": 0.69, "ask": 0.92, "volume": 1236, "profit_a": 0.5700000000000003, "profit_b": 0.33999999999999986, "profit_l": 0.35000000000000053, "e_b": 0.05354330708661415, "e_a": 0.08976377952755911, "e_l": 0.05511811023622056, "break_even": 0.11023622047244094}, {"in_money": false, "stock": "HYRE", "curr_price": 2.3, "week": 2, "expiration_date": 1573776000, "strike": 2.5, "last_price": 0.3, "bid": 0.25, "ask": 0.35, "volume": 25, "profit_a": 0.175, "profit_b": 0.125, "profit_l": 0.15, "e_b": 0.05434782608695653, "e_a": 0.07608695652173914, "e_l": 0.06521739130434782, "break_even": 0.13043478260869565}, {"in_money": false, "stock": "CHK", "curr_price": 1.44, "week": 1, "expiration_date": 1573171200, "strike": 1.5, "last_price": 0.08, "bid": 0.08, "ask": 0.09, "volume": 8483, "profit_a": 0.09, "profit_b": 0.08, "profit_l": 0.08, "e_b": 0.05555555555555556, "e_a": 0.0625, "e_l": 0.05555555555555556, "break_even": 0.05555555555555556}, {"in_money": true, "stock": "INFN", "curr_price": 5.68, "week": 1, "expiration_date": 1573171200, "strike": 5.5, "last_price": 0.59, "bid": 0.5, "ask": 0.65, "volume": 21, "profit_a": 0.47000000000000064, "profit_b": 0.3200000000000003, "profit_l": 0.41000000000000014, "e_b": 0.056338028169014134, "e_a": 0.08274647887323955, "e_l": 0.07218309859154932, "break_even": 0.10387323943661972}, {"in_money": false, "stock": "WLL", "curr_price": 6.79, "week": 1, "expiration_date": 1573171200, "strike": 7.0, "last_price": 0.43, "bid": 0.39, "ask": 0.47, "volume": 640, "profit_a": 0.47, "profit_b": 0.39, "profit_l": 0.43, "e_b": 0.057437407952871875, "e_a": 0.06921944035346096, "e_l": 0.06332842415316642, "break_even": 0.06332842415316642}, {"in_money": false, "stock": "PCG", "curr_price": 6.35, "week": 2, "expiration_date": 1573776000, "strike": 6.5, "last_price": 0.66, "bid": 0.74, "ask": 0.93, "volume": 610, "profit_a": 0.465, "profit_b": 0.37, "profit_l": 0.33, "e_b": 0.05826771653543307, "e_a": 0.07322834645669292, "e_l": 0.05196850393700788, "break_even": 0.10393700787401576}, {"in_money": false, "stock": "MNK", "curr_price": 3.37, "week": 1, "expiration_date": 1573171200, "strike": 4.0, "last_price": 0.2, "bid": 0.2, "ask": 0.3, "volume": 33, "profit_a": 0.3, "profit_b": 0.2, "profit_l": 0.2, "e_b": 0.05934718100890208, "e_a": 0.08902077151335311, "e_l": 0.05934718100890208, "break_even": 0.05934718100890208}, {"in_money": false, "stock": "ENDP", "curr_price": 4.82, "week": 1, "expiration_date": 1573171200, "strike": 5.0, "last_price": 0.33, "bid": 0.3, "ask": 0.35, "volume": 364, "profit_a": 0.35, "profit_b": 0.3, "profit_l": 0.33, "e_b": 0.06224066390041493, "e_a": 0.07261410788381742, "e_l": 0.06846473029045642, "break_even": 0.06846473029045642}, {"in_money": false, "stock": "VRAY", "curr_price": 2.8, "week": 2, "expiration_date": 1573776000, "strike": 3.0, "last_price": 0.4, "bid": 0.35, "ask": 0.4, "volume": 280, "profit_a": 0.2, "profit_b": 0.175, "profit_l": 0.2, "e_b": 0.0625, "e_a": 0.07142857142857144, "e_l": 0.07142857142857144, "break_even": 0.14285714285714288}, {"in_money": true, "stock": "DF", "curr_price": 1.02, "week": 2, "expiration_date": 1573776000, "strike": 1.0, "last_price": 0.2, "bid": 0.15, "ask": 0.2, "volume": 97, "profit_a": 0.08999999999999997, "profit_b": 0.06499999999999995, "profit_l": 0.08999999999999997, "e_b": 0.06372549019607837, "e_a": 0.08823529411764702, "e_l": 0.08823529411764702, "break_even": 0.19607843137254902}, {"in_money": true, "stock": "DO", "curr_price": 5.9, "week": 7, "expiration_date": 1576800000, "strike": 2.0, "last_price": 6.1, "bid": 6.55, "ask": 7.2, "volume": 11, "profit_a": 0.47142857142857125, "profit_b": 0.3785714285714286, "profit_l": 0.31428571428571417, "e_b": 0.06416464891041163, "e_a": 0.07990314769975783, "e_l": 0.05326876513317189, "break_even": 1.0338983050847457}, {"in_money": false, "stock": "EROS", "curr_price": 2.32, "week": 2, "expiration_date": 1573776000, "strike": 2.5, "last_price": 0.35, "bid": 0.3, "ask": 0.35, "volume": 231, "profit_a": 0.175, "profit_b": 0.15, "profit_l": 0.175, "e_b": 0.06465517241379311, "e_a": 0.07543103448275862, "e_l": 0.07543103448275862, "break_even": 0.15086206896551724}, {"in_money": false, "stock": "MNK", "curr_price": 3.37, "week": 1, "expiration_date": 1573171200, "strike": 3.5, "last_price": 0.3, "bid": 0.25, "ask": 0.35, "volume": 217, "profit_a": 0.35, "profit_b": 0.25, "profit_l": 0.3, "e_b": 0.07418397626112759, "e_a": 0.10385756676557863, "e_l": 0.08902077151335311, "break_even": 0.08902077151335311}, {"in_money": false, "stock": "PCG", "curr_price": 6.35, "week": 1, "expiration_date": 1573171200, "strike": 6.5, "last_price": 0.55, "bid": 0.59, "ask": 0.64, "volume": 2203, "profit_a": 0.64, "profit_b": 0.59, "profit_l": 0.55, "e_b": 0.09291338582677165, "e_a": 0.10078740157480316, "e_l": 0.08661417322834647, "break_even": 0.08661417322834647}]
+1. STOCK NAME (Out): ADMA --- STOCK CURRENT PRICE: 4.97 --- STRIKE: 5.00 --- EXPIRATION DATE: 2 --- BID: 0.30 --- ASK: 0.35 --- LAST PRICE: 0.31 --- EBID: 0.0302 --- EASK: 0.0352 --- ELAST: 0.0312 --- BREAK EVEN BID: 0.0624 
+ 
+2. STOCK NAME (In): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 3.50 --- EXPIRATION DATE: 2 --- BID: 0.25 --- ASK: 0.27 --- LAST PRICE: 0.26 --- EBID: 0.0252 --- EASK: 0.0280 --- ELAST: 0.0266 --- BREAK EVEN BID: 0.0728 
+ 
+3. STOCK NAME (In): ACOR --- STOCK CURRENT PRICE: 2.10 --- STRIKE: 2.00 --- EXPIRATION DATE: 2 --- BID: 0.20 --- ASK: 0.30 --- LAST PRICE: 0.20 --- EBID: 0.0238 --- EASK: 0.0476 --- ELAST: 0.0238 --- BREAK EVEN BID: 0.0952 
+ 
+4. STOCK NAME (In): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 3.50 --- EXPIRATION DATE: 3 --- BID: 0.29 --- ASK: 0.31 --- LAST PRICE: 0.30 --- EBID: 0.0205 --- EASK: 0.0224 --- ELAST: 0.0215 --- BREAK EVEN BID: 0.0840 
+ 
+5. STOCK NAME (In): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 3.50 --- EXPIRATION DATE: 1 --- BID: 0.14 --- ASK: 0.15 --- LAST PRICE: 0.15 --- EBID: 0.0196 --- EASK: 0.0224 --- ELAST: 0.0224 --- BREAK EVEN BID: 0.0420 
+ 
+6. STOCK NAME (Out): AGEN --- STOCK CURRENT PRICE: 2.85 --- STRIKE: 3.00 --- EXPIRATION DATE: 2 --- BID: 0.10 --- ASK: 0.15 --- LAST PRICE: 0.14 --- EBID: 0.0175 --- EASK: 0.0263 --- ELAST: 0.0246 --- BREAK EVEN BID: 0.0491 
+ 
+7. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 4.00 --- EXPIRATION DATE: 2 --- BID: 0.10 --- ASK: 0.11 --- LAST PRICE: 0.11 --- EBID: 0.0140 --- EASK: 0.0154 --- ELAST: 0.0154 --- BREAK EVEN BID: 0.0308 
+ 
+8. STOCK NAME (In): ACOR --- STOCK CURRENT PRICE: 2.10 --- STRIKE: 2.00 --- EXPIRATION DATE: 7 --- BID: 0.30 --- ASK: 1.15 --- LAST PRICE: 0.35 --- EBID: 0.0136 --- EASK: 0.0714 --- ELAST: 0.0170 --- BREAK EVEN BID: 0.1667 
+ 
+9. STOCK NAME (In): AFMD --- STOCK CURRENT PRICE: 3.07 --- STRIKE: 2.50 --- EXPIRATION DATE: 2 --- BID: 0.65 --- ASK: 0.70 --- LAST PRICE: 0.67 --- EBID: 0.0130 --- EASK: 0.0212 --- ELAST: 0.0163 --- BREAK EVEN BID: 0.2182 
+ 
+10. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 4.00 --- EXPIRATION DATE: 3 --- BID: 0.13 --- ASK: 0.14 --- LAST PRICE: 0.13 --- EBID: 0.0121 --- EASK: 0.0131 --- ELAST: 0.0121 --- BREAK EVEN BID: 0.0364 
+ 
+11. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 4.00 --- EXPIRATION DATE: 4 --- BID: 0.15 --- ASK: 0.18 --- LAST PRICE: 0.16 --- EBID: 0.0105 --- EASK: 0.0126 --- ELAST: 0.0112 --- BREAK EVEN BID: 0.0448 
+ 
+12. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 4.00 --- EXPIRATION DATE: 7 --- BID: 0.22 --- ASK: 0.23 --- LAST PRICE: 0.24 --- EBID: 0.0088 --- EASK: 0.0092 --- ELAST: 0.0096 --- BREAK EVEN BID: 0.0672 
+ 
+13. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 4.00 --- EXPIRATION DATE: 1 --- BID: 0.03 --- ASK: 0.04 --- LAST PRICE: 0.03 --- EBID: 0.0084 --- EASK: 0.0112 --- ELAST: 0.0084 --- BREAK EVEN BID: 0.0084 
+ 
+14. STOCK NAME (Out): AGEN --- STOCK CURRENT PRICE: 2.85 --- STRIKE: 3.00 --- EXPIRATION DATE: 7 --- BID: 0.15 --- ASK: 0.35 --- LAST PRICE: 0.20 --- EBID: 0.0075 --- EASK: 0.0175 --- ELAST: 0.0100 --- BREAK EVEN BID: 0.0702 
+ 
+15. STOCK NAME (Out): ACOR --- STOCK CURRENT PRICE: 2.10 --- STRIKE: 3.00 --- EXPIRATION DATE: 7 --- BID: 0.10 --- ASK: 0.30 --- LAST PRICE: 0.10 --- EBID: 0.0068 --- EASK: 0.0204 --- ELAST: 0.0068 --- BREAK EVEN BID: 0.0476 
+ 
+16. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 4.50 --- EXPIRATION DATE: 2 --- BID: 0.04 --- ASK: 0.05 --- LAST PRICE: 0.05 --- EBID: 0.0056 --- EASK: 0.0070 --- ELAST: 0.0070 --- BREAK EVEN BID: 0.0140 
+ 
+17. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 4.50 --- EXPIRATION DATE: 3 --- BID: 0.05 --- ASK: 0.06 --- LAST PRICE: 0.05 --- EBID: 0.0047 --- EASK: 0.0056 --- ELAST: 0.0047 --- BREAK EVEN BID: 0.0140 
+ 
+18. STOCK NAME (In): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 3.00 --- EXPIRATION DATE: 2 --- BID: 0.60 --- ASK: 0.65 --- LAST PRICE: 0.61 --- EBID: 0.0042 --- EASK: 0.0112 --- ELAST: 0.0056 --- BREAK EVEN BID: 0.1709 
+ 
+19. STOCK NAME (In): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 3.00 --- EXPIRATION DATE: 3 --- BID: 0.60 --- ASK: 0.66 --- LAST PRICE: 0.64 --- EBID: 0.0028 --- EASK: 0.0084 --- ELAST: 0.0065 --- BREAK EVEN BID: 0.1793 
+ 
+20. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 4.50 --- EXPIRATION DATE: 1 --- BID: 0.01 --- ASK: 0.02 --- LAST PRICE: 0.02 --- EBID: 0.0028 --- EASK: 0.0056 --- ELAST: 0.0056 --- BREAK EVEN BID: 0.0056 
+ 
+21. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 5.00 --- EXPIRATION DATE: 7 --- BID: 0.07 --- ASK: 0.08 --- LAST PRICE: 0.07 --- EBID: 0.0028 --- EASK: 0.0032 --- ELAST: 0.0028 --- BREAK EVEN BID: 0.0196 
+ 
+22. STOCK NAME (In): ADMS --- STOCK CURRENT PRICE: 4.34 --- STRIKE: 2.50 --- EXPIRATION DATE: 7 --- BID: 1.90 --- ASK: 2.10 --- LAST PRICE: 1.45 --- EBID: 0.0020 --- EASK: 0.0086 --- ELAST: -0.0128 --- BREAK EVEN BID: 0.3341 
+ 
+23. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 5.00 --- EXPIRATION DATE: 3 --- BID: 0.02 --- ASK: 0.03 --- LAST PRICE: 0.03 --- EBID: 0.0019 --- EASK: 0.0028 --- ELAST: 0.0028 --- BREAK EVEN BID: 0.0084 
+ 
+24. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 5.00 --- EXPIRATION DATE: 2 --- BID: 0.01 --- ASK: 0.02 --- LAST PRICE: 0.02 --- EBID: 0.0014 --- EASK: 0.0028 --- ELAST: 0.0028 --- BREAK EVEN BID: 0.0056 
+ 
+25. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 6.00 --- EXPIRATION DATE: 2 --- BID: 0.01 --- ASK: 0.02 --- LAST PRICE: 0.01 --- EBID: 0.0014 --- EASK: 0.0028 --- ELAST: 0.0014 --- BREAK EVEN BID: 0.0028 
+ 
+26. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 6.00 --- EXPIRATION DATE: 7 --- BID: 0.03 --- ASK: 0.04 --- LAST PRICE: 0.04 --- EBID: 0.0012 --- EASK: 0.0016 --- ELAST: 0.0016 --- BREAK EVEN BID: 0.0112 
+ 
+27. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 5.50 --- EXPIRATION DATE: 3 --- BID: 0.01 --- ASK: 0.03 --- LAST PRICE: 0.02 --- EBID: 0.0009 --- EASK: 0.0028 --- ELAST: 0.0019 --- BREAK EVEN BID: 0.0056 
+ 
+28. STOCK NAME (In): AGI --- STOCK CURRENT PRICE: 5.44 --- STRIKE: 5.00 --- EXPIRATION DATE: 2 --- BID: 0.45 --- ASK: 0.55 --- LAST PRICE: 0.40 --- EBID: 0.0009 --- EASK: 0.0101 --- ELAST: -0.0037 --- BREAK EVEN BID: 0.0735 
+ 
+29. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 7.00 --- EXPIRATION DATE: 7 --- BID: 0.01 --- ASK: 0.04 --- LAST PRICE: 0.03 --- EBID: 0.0004 --- EASK: 0.0016 --- ELAST: 0.0012 --- BREAK EVEN BID: 0.0084 
+ 
+30. STOCK NAME (Out): AGI --- STOCK CURRENT PRICE: 5.44 --- STRIKE: 12.50 --- EXPIRATION DATE: 7 --- BID: 0.00 --- ASK: 0.50 --- LAST PRICE: 0.15 --- EBID: 0.0000 --- EASK: 0.0131 --- ELAST: 0.0039 --- BREAK EVEN BID: 0.0276 
+ 
+31. STOCK NAME (Out): AGI --- STOCK CURRENT PRICE: 5.44 --- STRIKE: 7.50 --- EXPIRATION DATE: 7 --- BID: 0.00 --- ASK: 0.05 --- LAST PRICE: 0.03 --- EBID: 0.0000 --- EASK: 0.0013 --- ELAST: 0.0008 --- BREAK EVEN BID: 0.0055 
+ 
+32. STOCK NAME (Out): AGI --- STOCK CURRENT PRICE: 5.44 --- STRIKE: 7.50 --- EXPIRATION DATE: 2 --- BID: 0.00 --- ASK: 0.05 --- LAST PRICE: 0.01 --- EBID: 0.0000 --- EASK: 0.0046 --- ELAST: 0.0009 --- BREAK EVEN BID: 0.0018 
+ 
+33. STOCK NAME (Out): ACRS --- STOCK CURRENT PRICE: 1.89 --- STRIKE: 7.50 --- EXPIRATION DATE: 2 --- BID: 0.00 --- ASK: 0.40 --- LAST PRICE: 0.35 --- EBID: 0.0000 --- EASK: 0.1058 --- ELAST: 0.0926 --- BREAK EVEN BID: 0.1852 
+ 
+34. STOCK NAME (Out): ADMP --- STOCK CURRENT PRICE: 0.78 --- STRIKE: 5.00 --- EXPIRATION DATE: 2 --- BID: 0.00 --- ASK: 0.05 --- LAST PRICE: 0.05 --- EBID: 0.0000 --- EASK: 0.0321 --- ELAST: 0.0321 --- BREAK EVEN BID: 0.0641 
+ 
+35. STOCK NAME (Out): ADMP --- STOCK CURRENT PRICE: 0.78 --- STRIKE: 2.50 --- EXPIRATION DATE: 2 --- BID: 0.00 --- ASK: 0.05 --- LAST PRICE: 0.05 --- EBID: 0.0000 --- EASK: 0.0321 --- ELAST: 0.0321 --- BREAK EVEN BID: 0.0641 
+ 
+36. STOCK NAME (Out): ABUS --- STOCK CURRENT PRICE: 1.37 --- STRIKE: 2.50 --- EXPIRATION DATE: 2 --- BID: 0.00 --- ASK: 0.05 --- LAST PRICE: 0.06 --- EBID: 0.0000 --- EASK: 0.0182 --- ELAST: 0.0219 --- BREAK EVEN BID: 0.0438 
+ 
+37. STOCK NAME (Out): ABEO --- STOCK CURRENT PRICE: 2.53 --- STRIKE: 5.00 --- EXPIRATION DATE: 2 --- BID: 0.00 --- ASK: 0.05 --- LAST PRICE: 0.09 --- EBID: 0.0000 --- EASK: 0.0099 --- ELAST: 0.0178 --- BREAK EVEN BID: 0.0356 
+ 
+38. STOCK NAME (Out): ACRS --- STOCK CURRENT PRICE: 1.89 --- STRIKE: 2.50 --- EXPIRATION DATE: 2 --- BID: 0.00 --- ASK: 0.05 --- LAST PRICE: 0.05 --- EBID: 0.0000 --- EASK: 0.0132 --- ELAST: 0.0132 --- BREAK EVEN BID: 0.0265 
+ 
+39. STOCK NAME (Out): ACRX --- STOCK CURRENT PRICE: 2.04 --- STRIKE: 2.50 --- EXPIRATION DATE: 2 --- BID: 0.00 --- ASK: 0.10 --- LAST PRICE: 0.05 --- EBID: 0.0000 --- EASK: 0.0245 --- ELAST: 0.0123 --- BREAK EVEN BID: 0.0245 
+ 
+40. STOCK NAME (Out): ADMP --- STOCK CURRENT PRICE: 0.78 --- STRIKE: 2.50 --- EXPIRATION DATE: 7 --- BID: 0.00 --- ASK: 0.05 --- LAST PRICE: 0.05 --- EBID: 0.0000 --- EASK: 0.0092 --- ELAST: 0.0092 --- BREAK EVEN BID: 0.0641 
+ 
+41. STOCK NAME (Out): AGEN --- STOCK CURRENT PRICE: 2.85 --- STRIKE: 4.00 --- EXPIRATION DATE: 2 --- BID: 0.00 --- ASK: 0.10 --- LAST PRICE: 0.05 --- EBID: 0.0000 --- EASK: 0.0175 --- ELAST: 0.0088 --- BREAK EVEN BID: 0.0175 
+ 
+42. STOCK NAME (Out): AFMD --- STOCK CURRENT PRICE: 3.07 --- STRIKE: 5.00 --- EXPIRATION DATE: 2 --- BID: 0.00 --- ASK: 0.05 --- LAST PRICE: 0.05 --- EBID: 0.0000 --- EASK: 0.0081 --- ELAST: 0.0081 --- BREAK EVEN BID: 0.0163 
+ 
+43. STOCK NAME (Out): ACOR --- STOCK CURRENT PRICE: 2.10 --- STRIKE: 3.00 --- EXPIRATION DATE: 2 --- BID: 0.00 --- ASK: 0.05 --- LAST PRICE: 0.03 --- EBID: 0.0000 --- EASK: 0.0119 --- ELAST: 0.0071 --- BREAK EVEN BID: 0.0143 
+ 
+44. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 7.00 --- EXPIRATION DATE: 1 --- BID: 0.00 --- ASK: 0.03 --- LAST PRICE: 0.02 --- EBID: 0.0000 --- EASK: 0.0084 --- ELAST: 0.0056 --- BREAK EVEN BID: 0.0056 
+ 
+45. STOCK NAME (Out): ABUS --- STOCK CURRENT PRICE: 1.37 --- STRIKE: 5.00 --- EXPIRATION DATE: 7 --- BID: 0.00 --- ASK: 0.10 --- LAST PRICE: 0.05 --- EBID: 0.0000 --- EASK: 0.0104 --- ELAST: 0.0052 --- BREAK EVEN BID: 0.0365 
+ 
+46. STOCK NAME (Out): ABUS --- STOCK CURRENT PRICE: 1.37 --- STRIKE: 2.50 --- EXPIRATION DATE: 7 --- BID: 0.00 --- ASK: 0.10 --- LAST PRICE: 0.05 --- EBID: 0.0000 --- EASK: 0.0104 --- ELAST: 0.0052 --- BREAK EVEN BID: 0.0365 
+ 
+47. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 5.00 --- EXPIRATION DATE: 5 --- BID: 0.00 --- ASK: 0.30 --- LAST PRICE: 0.07 --- EBID: 0.0000 --- EASK: 0.0168 --- ELAST: 0.0039 --- BREAK EVEN BID: 0.0196 
+ 
+48. STOCK NAME (Out): ACRX --- STOCK CURRENT PRICE: 2.04 --- STRIKE: 5.00 --- EXPIRATION DATE: 7 --- BID: 0.00 --- ASK: 0.05 --- LAST PRICE: 0.05 --- EBID: 0.0000 --- EASK: 0.0035 --- ELAST: 0.0035 --- BREAK EVEN BID: 0.0245 
+ 
+49. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 7.00 --- EXPIRATION DATE: 5 --- BID: 0.00 --- ASK: 0.30 --- LAST PRICE: 0.05 --- EBID: 0.0000 --- EASK: 0.0168 --- ELAST: 0.0028 --- BREAK EVEN BID: 0.0140 
+ 
+50. STOCK NAME (Out): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 6.00 --- EXPIRATION DATE: 3 --- BID: 0.00 --- ASK: 0.04 --- LAST PRICE: 0.02 --- EBID: 0.0000 --- EASK: 0.0037 --- ELAST: 0.0019 --- BREAK EVEN BID: 0.0056 
+ 
+51. STOCK NAME (Out): ACRX --- STOCK CURRENT PRICE: 2.04 --- STRIKE: 7.50 --- EXPIRATION DATE: 7 --- BID: 0.00 --- ASK: 0.05 --- LAST PRICE: 0.01 --- EBID: 0.0000 --- EASK: 0.0035 --- ELAST: 0.0007 --- BREAK EVEN BID: 0.0049 
+ 
+52. STOCK NAME (In): ACTG --- STOCK CURRENT PRICE: 2.56 --- STRIKE: 2.50 --- EXPIRATION DATE: 7 --- BID: 0.05 --- ASK: 0.30 --- LAST PRICE: 0.20 --- EBID: -0.0006 --- EASK: 0.0134 --- ELAST: 0.0078 --- BREAK EVEN BID: 0.0781 
+ 
+53. STOCK NAME (In): AGI --- STOCK CURRENT PRICE: 5.44 --- STRIKE: 2.50 --- EXPIRATION DATE: 7 --- BID: 2.90 --- ASK: 3.00 --- LAST PRICE: 3.00 --- EBID: -0.0011 --- EASK: 0.0016 --- ELAST: 0.0016 --- BREAK EVEN BID: 0.5515 
+ 
+54. STOCK NAME (In): ACHN --- STOCK CURRENT PRICE: 6.45 --- STRIKE: 6.00 --- EXPIRATION DATE: 7 --- BID: 0.35 --- ASK: 0.75 --- LAST PRICE: 0.55 --- EBID: -0.0022 --- EASK: 0.0066 --- ELAST: 0.0022 --- BREAK EVEN BID: 0.0853 
+ 
+55. STOCK NAME (In): ACHN --- STOCK CURRENT PRICE: 6.45 --- STRIKE: 3.00 --- EXPIRATION DATE: 7 --- BID: 3.30 --- ASK: 4.70 --- LAST PRICE: 3.40 --- EBID: -0.0033 --- EASK: 0.0277 --- ELAST: -0.0011 --- BREAK EVEN BID: 0.5271 
+ 
+56. STOCK NAME (In): ADMA --- STOCK CURRENT PRICE: 4.97 --- STRIKE: 2.50 --- EXPIRATION DATE: 7 --- BID: 2.35 --- ASK: 2.60 --- LAST PRICE: 2.60 --- EBID: -0.0034 --- EASK: 0.0037 --- ELAST: 0.0037 --- BREAK EVEN BID: 0.5231 
+ 
+57. STOCK NAME (In): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 1.00 --- EXPIRATION DATE: 2 --- BID: 2.53 --- ASK: 2.73 --- LAST PRICE: 2.82 --- EBID: -0.0056 --- EASK: 0.0224 --- ELAST: 0.0350 --- BREAK EVEN BID: 0.7899 
+ 
+58. STOCK NAME (In): ACB --- STOCK CURRENT PRICE: 3.57 --- STRIKE: 3.00 --- EXPIRATION DATE: 1 --- BID: 0.53 --- ASK: 0.60 --- LAST PRICE: 0.60 --- EBID: -0.0112 --- EASK: 0.0084 --- ELAST: 0.0084 --- BREAK EVEN BID: 0.1681 
+ 
+59. STOCK NAME (In): AGEN --- STOCK CURRENT PRICE: 2.85 --- STRIKE: 2.00 --- EXPIRATION DATE: 2 --- BID: 0.65 --- ASK: 0.95 --- LAST PRICE: 0.90 --- EBID: -0.0351 --- EASK: 0.0175 --- ELAST: 0.0088 --- BREAK EVEN BID: 0.3158 
+ 
+60. STOCK NAME (In): ACOR --- STOCK CURRENT PRICE: 2.10 --- STRIKE: 1.00 --- EXPIRATION DATE: 2 --- BID: 0.85 --- ASK: 1.05 --- LAST PRICE: 0.94 --- EBID: -0.0595 --- EASK: -0.0119 --- ELAST: -0.0381 --- BREAK EVEN BID: 0.4476 
+ 
