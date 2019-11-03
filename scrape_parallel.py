@@ -212,7 +212,7 @@ def get_stock(stock):
 
 # get_stock("GRPN")
 
-with Pool(4) as p:
+with Pool(3) as p:
   p.map(get_stock, stocks)
   print("Pooled")
 
