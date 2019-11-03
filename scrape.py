@@ -20,6 +20,9 @@ expire_dates= [ (1573171200 + 604800*i) for i in range(nweeks) ]
 stocks = []
 bad_stocks = []
 bad_stocks.extend(open("bad_stocks.txt", "r", encoding="ascii").read().split("\n")[:-1])
+rare_stocks = []
+rare_stocks.extend(open("rare_stocks.txt", "r", encoding="ascii").read().split("\n")[:-1])
+
 
 for stocks_file in stocks_files:
   stocks.extend(open(stocks_file, "r", encoding="ascii").read().split("\n")[:-1])
@@ -55,12 +58,12 @@ try:
     curr_soup = BeautifulSoup(curr_html, "html5lib")
     curr_price = tof(curr_soup.find("bg-quote", field="Last"))
 
-    failedOn1 = False
+    failedOnNotCommon = stock in rare_stocks
 
     if curr_price < price_max:
       for date_i in range(len(expire_dates)):
         w = date_i + 1
-        if failedOn1 and w not in commonWeeks:
+        if failedOnNotCommon and w not in commonWeeks:
           continue
         url = "http://finance.yahoo.com/quote/" + stock + "/options?p=" + stock + "&date=" + str(expire_dates[date_i])
         trows = []
@@ -71,10 +74,13 @@ try:
           trows = soup.find("table", class_="calls").contents[1].children
         except:
           print("Error getting data for " + stock + " on week " + str(w) + "\n")
-          if w == 1:
-            failedOn1 = True
+          if w not in commonWeeks and (w == 1 or w == 2):
+            failedOnNotCommon = True
+            fil = open("rare_stocks.txt", "a")
+            fil.write(stock + "\n")
+            fil.close()
           if w in commonWeeks:
-            if (failedOn1):
+            if (failedOnNotCommon):
                 ptr = open("bad_stocks.txt", "a")
                 ptr.write(stock + "\n")
                 ptr.close()
