@@ -14,7 +14,13 @@ volume_min = 10
 
 stocks = []
 bad_stocks = []
+rare_stocks = []
 bad_stocks.extend(open("bad_stocks.txt", "r", encoding="ascii").read().split("\n")[:-1])
+rare_stocks.extend(open("rare_stocks.txt", "r", encoding="ascii").read().split("\n")[:-1])
+
+fp = open("data_parallel.txt", "w")
+fp.write("")
+fp.close()
 
 for stocks_file in stocks_files:
   stocks.extend(open(stocks_file, "r", encoding="ascii").read().split("\n")[:-1])
@@ -40,28 +46,42 @@ def checker(data1, data2):
             return False
     return True
 
+def generateWeekOrder(weeks, totalWeeks):
+    lst = []
+    for i in weeks:
+        if (i <= totalWeeks and i > 0):
+            lst.append(i)
+    for i in range(1,totalWeeks+1):
+        if i not in lst:
+            lst.append(i)
+    return lst
+
 #data = []
 #previous = []
 
 def get_stock(stock):
-  nweeks = 8
+  if (stock in bad_stocks):
+      print(stock + " is a bad stock \n")
+      return
+  nweeks = 4
   out_file = "data.txt"
   save_count = 100
-  commonWeeks = [2,7,11] # this one week per month
+  commonWeeks = [2,7] # RIGHT NOW THIS NEEDS TO BE CHANGED EVERY WEEK!!!
+  weekOrder = generateWeekOrder(commonWeeks, nweeks)
 
-  expire_dates= [ (1573171200 + 604800*i) for i in range(nweeks) ]
+  expire_dates= [ (1573171200 + 604800*(i - 1)) for i in weekOrder ]
 
   curr_url = ("https://www.marketwatch.com/investing/stock/" + stock.lower()).replace("\x00","")
   curr_html = urllib.request.urlopen(curr_url, context = ssl.SSLContext()).read()
   curr_soup = BeautifulSoup(curr_html, "html5lib")
   curr_price = tof(curr_soup.find("bg-quote", field="Last"))
 
-  failedOn1 = False
+  isRareStock = stock in rare_stocks
 
   if curr_price < price_max:
     for date_i in range(len(expire_dates)):
-      w = date_i + 1
-      if failedOn1 and w not in commonWeeks:
+      w = weekOrder[date_i]
+      if isRareStock and w not in commonWeeks:
         continue
       url = "http://finance.yahoo.com/quote/" + stock + "/options?p=" + stock + "&date=" + str(expire_dates[date_i])
       trows = []
@@ -72,14 +92,18 @@ def get_stock(stock):
         trows = soup.find("table", class_="calls").contents[1].children
       except Exception as e:
         print("Error getting data for " + stock + " on week " + str(w) + ":" + str(e))
-        if w == 1:
-          failedOn1 = True
+        if (str(e) == "HTTP Error 404: Not Found"):
+            return
+        if w not in commonWeeks and (w == 1 or w == 2):
+          isRareStock = True
+          fp = open("rare_stocks.txt","a")
+          fp.write(stock + "\n")
+          fp.close()
         if w in commonWeeks:
-          if (failedOn1):
-              ptr = open("bad_stocks.txt", "a")
-              #ptr.write(stock + "\n")
-              ptr.close()
-          break
+            ptr = open("bad_stocks.txt", "a")
+            ptr.write(stock + "\n")
+            ptr.close()
+            break
         pass
 
       for row in trows:
@@ -106,15 +130,15 @@ def get_stock(stock):
           e_a = profit_a / (curr_price)
           e_l = profit_l / (curr_price)
 
-          break_even = last_price / curr_price
+          break_even = last_price / (curr_price * w)
 
           data = { "in_money": in_mon, "stock": stock, "curr_price": curr_price, "week": w, "expiration_date": expire_dates[date_i], "strike": strike,
                         "last_price": last_price, "bid": bid, "ask": ask, "volume": volume,
                         "profit_a": profit_a, "profit_b": profit_b, "profit_l": profit_l,
                         "e_b": e_b, "e_a": e_a, "e_l": e_l, "break_even": break_even }
-          
+
           fp = open("data_parallel.txt", "a")
-          fp.write(json.dumps(data))
+          fp.write(json.dumps(data) + "\n")
           fp.close()
           """
           data.sort(key=lambda x: x["e_b"])
@@ -181,9 +205,14 @@ def get_stock(stock):
     pass
   """
 
-with Pool(10) as p:
+# with Pool(10) as p:
+#   p.map(get_stock, stocks)
+#   print("Pooled")
+
+# get_stock("GRPN")
+
+with Pool(4) as p:
   p.map(get_stock, stocks)
   print("Pooled")
 
 print("--- %s seconds ---" % (time.time() - start_time))
-
