@@ -11,12 +11,6 @@ start_time = time.time()
 stocks_files = ["nasdaq_clean.txt", "nyse_clean.txt"]
 price_max = 7.00
 volume_min = 10
-nweeks = 8
-out_file = "data.txt"
-save_count = 100
-commonWeeks = [2,7,11] # this one week per month
-
-expire_dates= [ (1573171200 + 604800*i) for i in range(nweeks) ]
 
 stocks = []
 bad_stocks = []
@@ -50,6 +44,13 @@ def checker(data1, data2):
 #previous = []
 
 def get_stock(stock):
+  nweeks = 8
+  out_file = "data.txt"
+  save_count = 100
+  commonWeeks = [2,7,11] # this one week per month
+
+  expire_dates= [ (1573171200 + 604800*i) for i in range(nweeks) ]
+
   curr_url = ("https://www.marketwatch.com/investing/stock/" + stock.lower()).replace("\x00","")
   curr_html = urllib.request.urlopen(curr_url, context = ssl.SSLContext()).read()
   curr_soup = BeautifulSoup(curr_html, "html5lib")
@@ -69,14 +70,14 @@ def get_stock(stock):
 
         soup = BeautifulSoup(html, "html5lib")
         trows = soup.find("table", class_="calls").contents[1].children
-      except:
-        print("Error getting data for " + stock + " on week " + str(w) + "\n")
+      except Exception as e:
+        print("Error getting data for " + stock + " on week " + str(w) + ":" + str(e))
         if w == 1:
           failedOn1 = True
         if w in commonWeeks:
           if (failedOn1):
               ptr = open("bad_stocks.txt", "a")
-              ptr.write(stock + "\n")
+              #ptr.write(stock + "\n")
               ptr.close()
           break
         pass
@@ -112,7 +113,9 @@ def get_stock(stock):
                         "profit_a": profit_a, "profit_b": profit_b, "profit_l": profit_l,
                         "e_b": e_b, "e_a": e_a, "e_l": e_l, "break_even": break_even }
           
-          print(data)
+          fp = open("data_parallel.txt", "a")
+          fp.write(json.dumps(data))
+          fp.close()
           """
           data.sort(key=lambda x: x["e_b"])
           if (len(data) <= save_count):
@@ -177,8 +180,10 @@ def get_stock(stock):
     print("--- %s seconds ---" % (time.time() - start_time))
     pass
   """
-print("--- %s seconds ---" % (time.time() - start_time))
-
 
 with Pool(10) as p:
   p.map(get_stock, stocks)
+  print("Pooled")
+
+print("--- %s seconds ---" % (time.time() - start_time))
+
