@@ -11,7 +11,7 @@ stocks_files = ["nasdaq_clean.txt", "nyse_clean.txt"]
 price_max = 7.00
 volume_min = 10
 nweeks = 8
-out_file = "data.json"
+out_file = "data.txt"
 save_count = 100
 commonWeeks = [2,7,11] # this one week per month
 
