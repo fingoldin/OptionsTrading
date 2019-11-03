@@ -12,6 +12,7 @@ stocks_files = ["nasdaq_clean.txt", "nyse_clean.txt"]
 price_max = 7.00
 volume_min = 10
 
+
 stocks = []
 bad_stocks = []
 rare_stocks = []
