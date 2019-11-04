@@ -1,4 +1,4 @@
-import urllib.request
+import urllib
 from bs4 import BeautifulSoup
 import sys
 import ssl
@@ -44,9 +44,9 @@ def checker(data1, data2):
 #previous = []
 
 def get_stock(stock):
-  nweeks = 8
-  out_file = "data.txt"
-  save_count = 100
+  nweeks = 2
+  #out_file = "data.txt"
+  #save_count = 100
   commonWeeks = [2,7,11] # this one week per month
 
   expire_dates= [ (1573171200 + 604800*i) for i in range(nweeks) ]
@@ -114,7 +114,7 @@ def get_stock(stock):
                         "e_b": e_b, "e_a": e_a, "e_l": e_l, "break_even": break_even }
           
           fp = open("data_parallel.txt", "a")
-          fp.write(json.dumps(data))
+          fp.write(json.dumps(data) + "\n")
           fp.close()
           """
           data.sort(key=lambda x: x["e_b"])
@@ -181,7 +181,7 @@ def get_stock(stock):
     pass
   """
 
-with Pool(10) as p:
+with Pool(3) as p:
   p.map(get_stock, stocks)
   print("Pooled")
 
