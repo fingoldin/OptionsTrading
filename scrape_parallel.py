@@ -45,14 +45,6 @@ def toi(v):
 def tof(v):
   return float(clean(v.string))
 
-def checker(data1, data2):
-    if (len(data1) != len(data2)):
-        return False
-    for i in range(len(data1)):
-        if (data1[i]["stock"] != data2[i]["stock"] or data1[i]["strike"] != data2[i]["strike"]):
-            return False
-    return True
-
 def generateWeekOrder(weeks, totalWeeks):
     lst = []
     for i in weeks:
@@ -62,9 +54,6 @@ def generateWeekOrder(weeks, totalWeeks):
         if i not in lst:
             lst.append(i)
     return lst
-
-#data = []
-#previous = []
 
 def get_stock(stock):
   if (stock in bad_stocks):
@@ -147,76 +136,10 @@ def get_stock(stock):
           fp = open("data_parallel.txt", "a")
           fp.write(json.dumps(data) + "\n")
           fp.close()
-          """
-          data.sort(key=lambda x: x["e_b"])
-          if (len(data) <= save_count):
-                temp = open(out_file, "w")
-                temp.write("")
-                temp.close()
-                for (index,st) in enumerate(data[::-1]):
-                    file = open(out_file, "a")
-                    inString = "In" if st["in_money"] else "Out"
-                    file.write("%d. STOCK NAME (%s): %s --- STOCK CURRENT PRICE: %.2f --- STRIKE: %.2f --- EXPIRATION DATE: %d --- BID: %.2f --- ASK: %.2f --- LAST PRICE: %.2f --- EBID: %.4f --- EASK: %.4f --- ELAST: %.4f --- BREAK EVEN BID: %.4f \n \n" % (index+1, inString, st["stock"], st["curr_price"], st["strike"], st["week"], st["bid"], st["ask"], st["last_price"],st["e_b"], st["e_a"], st["e_l"],st["break_even"]))
-                    file.close()
-                previous = data
-          else:
-              if (not checker(previous, data[-save_count:])):
-                  temp = open(out_file, "w")
-                  temp.write("")
-                  temp.close()
-                  for (index,st) in enumerate(data[-save_count:][::-1]):
-                      file = open(out_file, "a")
-                      inString = "In" if st["in_money"] else "Out"
-                      file.write("%d. STOCK NAME (%s): %s --- STOCK CURRENT PRICE: %.2f --- STRIKE: %.2f --- EXPIRATION DATE: %d --- BID: %.2f --- ASK: %.2f --- LAST PRICE: %.2f --- EBID: %.4f --- EASK: %.4f --- ELAST: %.4f --- BREAK EVEN BID: %.4f \n \n" % (index+1, inString, st["stock"], st["curr_price"], st["strike"], st["week"], st["bid"], st["ask"], st["last_price"],st["e_b"], st["e_a"], st["e_l"],st["break_even"]))
-                      file.close()
-                  previous = data[-save_count:]
-          # json.dump(data[-save_count:], open(out_file, "w")) - OLD FILE WRITING MECHANISM
-          """
     print("Processed " + stock)
-    """
-    if data:
-      data.sort(key=lambda x: x["e_b"])
-      m = "In" if data[-1]["in_money"] else "Out"
-      print("Best %s e_bid: %f, stock: %s, strike price: %f, bid: %f, curr_price: %f, expire_weeks: %d, break_even: %f" % (m, data[-1]["e_b"], data[-1]["stock"], data[-1]["strike"], data[-1]["bid"], data[-1]["curr_price"], data[-1]["week"], data[-1]["break_even"]))
-
-      data.sort(key=lambda x: x["e_a"])
-      m = "In" if data[-1]["in_money"] else "Out"
-      print("Best %s e_ask: %f, stock: %s, strike price: %f, ask: %f, curr_price: %f, expire_weeks: %d, break_even: %f" % (m, data[-1]["e_a"], data[-1]["stock"], data[-1]["strike"], data[-1]["ask"], data[-1]["curr_price"], data[-1]["week"], data[-1]["break_even"]))
-
-      data.sort(key=lambda x: 0.5*(x["e_a"]+x["e_b"]))
-      m = "In" if data[-1]["in_money"] else "Out"
-      print("Best %s e_mean: %f, stock: %s, strike price: %f, mean: %f, curr_price: %f, expire_weeks: %d, break_even: %f" % (m, 0.5*(data[-1]["e_a"]+data[-1]["e_b"]), data[-1]["stock"], data[-1]["strike"], 0.5*(data[-1]["bid"]+data[-1]["ask"]), data[-1]["curr_price"], data[-1]["week"], data[-1]["break_even"]))
-
-      data.sort(key=lambda x: x["e_l"])
-      m = "In" if data[-1]["in_money"] else "Out"
-      print("Best %s e_last: %f, stock: %s, strike price: %f, last: %f, curr_price: %f, expire_weeks: %d, break_even: %f" % (m, data[-1]["e_l"], data[-1]["stock"], data[-1]["strike"], data[-1]["last_price"], data[-1]["curr_price"], data[-1]["week"], data[-1]["break_even"]))
-    else:
-      print("No data")
-    """
   else:
     print("Too high price for " + stock)
   print("")
-  """
-  except KeyboardInterrupt:
-    temp = open(out_file, "w")
-    temp.write("")
-    temp.close()
-    save_count = min(save_count, len(data))
-    for (index,st) in enumerate(data[-save_count:][::-1]):
-      file = open(out_file, "a")
-      inString = "In" if st["in_money"] else "Out"
-      file.write("%d. STOCK NAME (%s): %s --- STOCK CURRENT PRICE: %.2f --- STRIKE: %.2f --- EXPIRATION DATE: %d --- BID: %.2f --- ASK: %.2f --- LAST PRICE: %.2f --- EBID: %.4f --- EASK: %.4f --- ELAST: %.4f --- BREAK EVEN BID: %.4f \n \n" % (index+1, inString, st["stock"], st["curr_price"], st["strike"], st["week"], st["bid"], st["ask"], st["last_price"],st["e_b"], st["e_a"], st["e_l"],st["break_even"]))
-      file.close()
-    # json.dump(data[-save_count:], open(out_file, "w"))  -- OLD FILE WRITE
-    print("--- %s seconds ---" % (time.time() - start_time))
-    pass
-  """
-
-# with Pool(10) as p:
-#   p.map(get_stock, stocks)
-#   print("Pooled")
-
-# get_stock("GRPN")
 
 with Pool(3) as p:
   p.map(get_stock, stocks)
