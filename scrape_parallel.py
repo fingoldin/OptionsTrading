@@ -70,7 +70,7 @@ def get_stock(stock):
   if (stock in bad_stocks):
       print(stock + " is a bad stock \n")
       return
-  nweeks = 4
+  nweeks = 7
   out_file = "data.txt"
   save_count = 100
   commonWeeks = [2,7] # RIGHT NOW THIS NEEDS TO BE CHANGED EVERY WEEK!!!
@@ -106,7 +106,7 @@ def get_stock(stock):
           fp = open("rare_stocks.txt","a")
           fp.write(stock + "\n")
           fp.close()
-        if w in commonWeeks:
+        if w == min(commonWeeks):
             ptr = open("bad_stocks.txt", "a")
             ptr.write(stock + "\n")
             ptr.close()
