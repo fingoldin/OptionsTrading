@@ -27,7 +27,7 @@ def sql_get_stocks():
 
 def sql_save_stock(stock, timestamp, price):
   with SQL() as c:
-    c.set("INSERT INTO stock_prices VALUES (DEFAULT," + \
+    c.set("INSERT INTO stock_prices VALUES (NOW()," + \
           str(stock) + "," + str(timestamp) + "," + str(price) + ")")
 
 def sql_save_option(data):
