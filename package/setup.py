@@ -7,4 +7,5 @@ setuptools.setup(
   author_email="vassilioskaxiras@gmail.com",
   description="Stock data scraper front-end",
   packages=setuptools.find_packages(),
+  install_requires = ["mysqlclient"]
 )
