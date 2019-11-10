@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS `options`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `options` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `insert_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `insert_time` datetime NOT NULL,
   `timestamp` bigint(20) NOT NULL,
   `stock` int(11) NOT NULL,
   `curr_price` float NOT NULL,
@@ -81,4 +81,4 @@ CREATE TABLE `stocks` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-09 22:56:59
+-- Dump completed on 2019-11-09 23:12:52

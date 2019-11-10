@@ -34,7 +34,7 @@ def sql_save_option(data):
   data_str = ",".join([ str(v) for v in data.values() ])
 
   with SQL() as c:
-    c.set("INSERT INTO options VALUES (DEFAULT,DEFAULT," + data_str + ")")
+    c.set("INSERT INTO options VALUES (DEFAULT,NOW()," + data_str + ")")
   
 def sql_save_options(options):
   for option in options:

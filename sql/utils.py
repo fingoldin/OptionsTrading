@@ -20,7 +20,7 @@ def get_first_expiration():
 
 def get_manual_params():
   nweeks = 7
-  common_weeks = [2,7] # RIGHT NOW THIS NEEDS TO BE CHANGED EVERY WEEK!!!
+  common_weeks = [1,6] # RIGHT NOW THIS NEEDS TO BE CHANGED EVERY WEEK!!!
   volume_min = 10
 
   return nweeks, common_weeks, volume_min

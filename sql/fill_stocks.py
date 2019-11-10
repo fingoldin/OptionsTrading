@@ -1,6 +1,6 @@
 import sql
 
-stocks_files = ["nasdaq_clean.txt", "nyse_clean.txt"]
+stocks_files = ["priority.txt"]#"nasdaq_clean.txt", "nyse_clean.txt"]
 
 stocks = []
 bad_stocks = []
