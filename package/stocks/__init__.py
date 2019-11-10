@@ -1,5 +1,3 @@
-from .stocks import get_options
-
-__all__ = ["get_options"]
+from .stocks import *
 
 __name__ = "stocks"
