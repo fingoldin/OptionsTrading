@@ -82,7 +82,7 @@ def scrape_options(stock):
                      "e_b": e_b, "e_a": e_a, "e_l": e_l, "break_even": break_even }
 
             out_data.append(data)
-        print("Processed " + stock["name"])
+        utils.log("Processed " + stock["name"])
       except Exception as e:
         utils.log("Error getting data for " + stock["name"] + " on week " + str(w) + ":" + str(e))
         #if (str(e) == "HTTP Error 404: Not Found"):
