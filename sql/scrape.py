@@ -1,4 +1,4 @@
-import urllib
+import urllib.request
 from bs4 import BeautifulSoup
 import ssl
 from multiprocessing import Pool
@@ -16,7 +16,7 @@ def scrape_price(stock):
     curr_price = utils.tof(curr_soup.find("bg-quote", field="Last"))
   except Exception as e:
     curr_price = -1.0
-    utils.log("Error getting price for " + stock["name"])
+    utils.log("Error getting price for " + stock["name"] + ": " + str(e))
     #if (str(e) == "HTTP Error 404: Not Found"):
     #  return timestamp, -1.0
 

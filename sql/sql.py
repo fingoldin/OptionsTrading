@@ -3,7 +3,7 @@ import MySQLdb.cursors
 
 class SQL:
   def __enter__(self):
-    self.conn = MySQLdb.Connect("localhost","vassy","","stocks", cursorclass=MySQLdb.cursors.DictCursor)
+    self.conn = MySQLdb.Connect("localhost","local","options","stocks", cursorclass=MySQLdb.cursors.DictCursor)
     self.cursor = self.conn.cursor()
     return self
 
