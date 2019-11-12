@@ -9,7 +9,7 @@ class SQL:
 
   def get(self, query):
     self.cursor.execute(query)
-    return self.cursor.fetchall()
+    return list(self.cursor.fetchall())
 
   def set(self, query):
     self.cursor.execute(query)

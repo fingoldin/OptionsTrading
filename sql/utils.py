@@ -27,18 +27,39 @@ def get_manual_params():
   return nweeks, common_weeks, volume_min
 
 def clean(v):
-  return v.replace("-","0").replace(",","")
-
-def toi(v):
-  return int(clean(v.string))
-
-def tof(v):
-  return float(clean(v.string))
+  return v.replace("-","0").replace(",","").replace("%","")
 
 def log(s):
   fp = open("/home/ec2-user/OptionsTrading/sql/log.txt","a")
   fp.write("[" + str(datetime.datetime.now()) + "]: " + s + "\n")
   fp.close()
+
+def toi(c, i):
+  try:
+    ret = int(clean(c[i].string))
+  except Exception as e:
+    log("Error in toi for " + str(c) + " on index " + str(i))
+    ret = 0
+
+  return ret
+
+def tof(c, i):
+  try:
+    ret = float(clean(c[i].string))
+  except Exception as e:
+    log("Error in tof for " + str(c) + " on index " + str(i))
+    ret = 0.0
+
+  return ret
+
+def tos(c, i):
+  try:
+    ret = c[i].string
+  except Exception as e:
+    log("Error in tos for " + str(c) + " on index " + str(i))
+    ret = ""
+
+  return ret
 
 def utc_timestamp():
   return int(time.time())

@@ -50,43 +50,71 @@ def scrape_options(stock):
 
         soup = BeautifulSoup(html, "html5lib")
         trows = soup.find("table", class_="calls").contents[1].children
+        if not trows:
+          raise ValueError("trows is None")
+      except Exception as e:
+        utils.log("Error getting data for " + stock["name"] + " on week " + str(w) + ":" + str(e))
 
-        for row in trows:
-          last_date = row.contents[1].string
-          strike = utils.tof(row.contents[2].contents[0])
-          last_price = utils.tof(row.contents[3])
-          bid = utils.tof(row.contents[4])
-          ask = utils.tof(row.contents[5])
-          volume = utils.toi(row.contents[8])
+      for row in trows:
+        try:
+          contents = row.contents
+          if not contents:
+            raise ValueError("contents is None")
+        except Exception as e:
+          utils.log("Error getting row data for " + stock["name"] + " on row: " + str(row))
 
-          if volume > volume_min:
-            profit_b = bid / w
-            profit_a = ask / w
-            profit_l = last_price / w
+        try:
+          strike_cont = contents[2].contents
+          if not strike_cont:
+            raise ValueError("strike_cont is None")
+        except Exception as e:
+          utils.log("Error getting strike container for " + stock["name"] + " on row: " + str(row))
 
-            if strike <= curr_price:
-              profit_b = (bid + strike - curr_price) / w
-              profit_a = (ask + strike - curr_price) / w
-              profit_l = (last_price + strike - curr_price) / w
+        last_date = utils.tos(contents, 1)
+        strike = utils.tof(strike_cont, 0)
+        last_price = utils.tof(contents, 3)
+        bid = utils.tof(contents, 4)
+        ask = utils.tof(contents, 5)
+        volume = utils.toi(contents, 8)
+        implied_volatility = utils.tof(contents, 10)
 
+        if volume > volume_min:
+          profit_b = bid / w
+          profit_a = ask / w
+          profit_l = last_price / w
+
+          if strike <= curr_price:
+            profit_b = (bid + strike - curr_price) / w
+            profit_a = (ask + strike - curr_price) / w
+            profit_l = (last_price + strike - curr_price) / w
+
+          if curr_price != 0: 
             e_b = profit_b / (curr_price)
             e_a = profit_a / (curr_price)
             e_l = profit_l / (curr_price)
+          else:
+            e_b = 0.0
+            e_a = 0.0
+            e_l = 0.0
 
-            break_even = last_price / (curr_price * w)
-            
-            # Don't change the order, name, or number of keys!
-            data = { "timestamp": timestamp, "stock": stock["id"], "curr_price": curr_price, 
-                     "expiration_date": expire_dates[date_i], "strike": strike,
+          break_even = last_price / (curr_price * w)
+          
+          # Don't change the order, name, or number of keys!
+          data = {
+                   "option": {
+                     "stock": stock["id"], "expiration_date": expire_dates[date_i], 
+                     "strike": strike, "put": False
+                    },
+                   "data": {
+                     "timestamp": timestamp, "curr_price": curr_price, 
                      "last_price": last_price, "bid": bid, "ask": ask, "volume": volume,
-                     "e_b": e_b, "e_a": e_a, "e_l": e_l, "break_even": break_even }
+                     "e_b": e_b, "e_a": e_a, "e_l": e_l, "break_even": break_even,
+                     "volatility": implied_volatility 
+                    }
+                  }
 
-            out_data.append(data)
-        utils.log("Processed " + stock["name"])
-      except Exception as e:
-        utils.log("Error getting data for " + stock["name"] + " on week " + str(w) + ":" + str(e))
-        #if (str(e) == "HTTP Error 404: Not Found"):
-        #  return
+          out_data.append(data)
+      utils.log("Processed " + stock["name"])
 
   return out_data
 
