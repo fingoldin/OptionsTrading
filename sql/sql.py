@@ -11,7 +11,7 @@ class SQL:
     self.cursor.execute(query)
     return list(self.cursor.fetchall())
 
-  def set(self, query, params):
+  def set(self, query, params=None):
     self.cursor.execute(query, params)
     return self.conn.commit()
 
