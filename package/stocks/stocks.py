@@ -2,17 +2,10 @@ from .sql import SQL
 from .utils import utc_timestamp
 
 def get_options(stock):
-  with SQL() as c:
-    data = c.get("SELECT * FROM options WHERE stock IN (SELECT id from stocks where name=\"" + str(stock) + "\")")
-
-  return data
-
-# time is in minutes
-def get_recent_options(time=100):
-  with SQL() as c:
-    data = c.get("SELECT * FROM options WHERE timestamp>\"" + str(utc_timestamp() - time * 60) + "\"")
-
-  return data
+    with SQL() as c:
+        data = c.get("SELECT * FROM options WHERE stock IN (SELECT id from stocks where name=\"" + str(stock) + "\")")
+        data["name"] = stock
+    return data
 
 def get_stock_name(id):
     name = ""
@@ -22,6 +15,15 @@ def get_stock_name(id):
         return name[0]["name"]
     else:
         return ""
+
+# time is in minutes
+def get_recent_options(time=100):
+    with SQL() as c:
+        data = c.get("SELECT * FROM options WHERE timestamp>\"" + str(utc_timestamp() - time * 60) + "\"")
+        for opt in data:
+            name = get_stock_name(opt["stock"])
+            opt["name"] = name
+    return data
 
 def get_prices(stock):
   with SQL() as c:
