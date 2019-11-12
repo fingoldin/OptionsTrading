@@ -13,7 +13,7 @@ def scrape_price(stock):
   try:
     curr_html = urllib.request.urlopen(curr_url, context = ssl.SSLContext()).read()
     curr_soup = BeautifulSoup(curr_html, "html5lib")
-    curr_price = utils.tof(curr_soup.find("bg-quote", field="Last"))
+    curr_price = utils.tof(curr_soup.findall("bg-quote", field="Last"), 0)
   except Exception as e:
     curr_price = -1.0
     utils.log("Error getting price for " + stock["name"] + ": " + str(e))
