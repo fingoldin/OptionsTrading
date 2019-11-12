@@ -13,7 +13,7 @@ def scrape_price(stock):
   try:
     curr_html = urllib.request.urlopen(curr_url, context = ssl.SSLContext()).read()
     curr_soup = BeautifulSoup(curr_html, "html5lib")
-    curr_price = utils.tof(curr_soup.findall("bg-quote", field="Last"), 0)
+    curr_price = float(utils.clean(curr_soup.find("bg-quote", field="Last").string))
   except Exception as e:
     curr_price = -1.0
     utils.log("Error getting price for " + stock["name"] + ": " + str(e))
@@ -102,8 +102,8 @@ def scrape_options(stock):
           # Don't change the order, name, or number of keys!
           data = {
                    "option": {
-                     "stock": stock["id"], "expiration_date": expire_dates[date_i], 
-                     "strike": strike, "put": False
+                     "stock": stock["id"], "expiration": expire_dates[date_i], 
+                     "strike": strike, "put": 0
                     },
                    "data": {
                      "timestamp": timestamp, "curr_price": curr_price, 

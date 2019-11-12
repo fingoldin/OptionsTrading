@@ -3939,3 +3939,527 @@
 [2019-11-12 15:09:43.647590]: Error getting price for DO: tof() missing 1 required positional argument: 'i'
 [2019-11-12 15:09:43.890088]: Error getting price for FLNT: tof() missing 1 required positional argument: 'i'
 [2019-11-12 15:09:46.474071]: Error getting price for LXU: tof() missing 1 required positional argument: 'i'
+[2019-11-12 15:14:31.604908]: Error getting price for MNK: 'NoneType' object is not callable
+[2019-11-12 15:14:31.657320]: Error getting price for EROS: 'NoneType' object is not callable
+[2019-11-12 15:14:32.643336]: Error getting price for VRAY: 'NoneType' object is not callable
+[2019-11-12 15:14:32.659902]: Error getting price for PCG: 'NoneType' object is not callable
+[2019-11-12 15:14:33.809584]: Error getting price for HYRE: 'NoneType' object is not callable
+[2019-11-12 15:14:33.940547]: Error getting price for ENDP: 'NoneType' object is not callable
+[2019-11-12 15:14:35.106242]: Error getting price for WLL: 'NoneType' object is not callable
+[2019-11-12 15:14:35.140384]: Error getting price for FTR: 'NoneType' object is not callable
+[2019-11-12 15:15:02.503726]: Error getting price for MNK: 'NoneType' object is not callable
+[2019-11-12 15:15:03.290962]: Error getting price for PCG: 'NoneType' object is not callable
+[2019-11-12 15:15:03.994603]: Error getting price for EROS: 'NoneType' object is not callable
+[2019-11-12 15:15:05.718898]: Error getting price for HYRE: 'NoneType' object is not callable
+[2019-11-12 15:15:06.492042]: Error getting price for VRAY: 'NoneType' object is not callable
+[2019-11-12 15:15:07.245861]: Error getting price for ENDP: 'NoneType' object is not callable
+[2019-11-12 15:15:08.420318]: Error getting price for WLL: 'NoneType' object is not callable
+[2019-11-12 15:15:09.733527]: Error getting price for FTR: 'NoneType' object is not callable
+[2019-11-12 15:15:11.218710]: Error getting price for INFN: 'NoneType' object is not callable
+[2019-11-12 15:15:12.289498]: Error getting price for GPRO: 'NoneType' object is not callable
+[2019-11-12 15:15:13.890209]: Error getting price for CHK: 'NoneType' object is not callable
+[2019-11-12 15:15:14.172442]: Error getting price for DF: 'NoneType' object is not callable
+[2019-11-12 15:15:16.538841]: Error getting price for LPCN: 'NoneType' object is not callable
+[2019-11-12 15:15:16.966893]: Error getting price for AGRX: 'NoneType' object is not callable
+[2019-11-12 15:15:18.954107]: Error getting price for MNKD: 'NoneType' object is not callable
+[2019-11-12 15:15:19.079789]: Error getting price for MDR: 'NoneType' object is not callable
+[2019-11-12 15:15:19.861522]: Error getting price for DO: 'NoneType' object is not callable
+[2019-11-12 15:15:20.787783]: Error getting price for FLNT: 'NoneType' object is not callable
+[2019-11-12 15:15:21.574441]: Error getting price for AUPH: 'NoneType' object is not callable
+[2019-11-12 15:15:21.758300]: Error getting price for LXU: 'NoneType' object is not callable
+[2019-11-12 15:15:49.999530]: Error getting price for EROS: clean() takes 1 positional argument but 2 were given
+[2019-11-12 15:15:51.331681]: Error getting price for MNK: clean() takes 1 positional argument but 2 were given
+[2019-11-12 15:15:51.353973]: Error getting price for VRAY: clean() takes 1 positional argument but 2 were given
+[2019-11-12 15:15:58.842876]: Error getting price for EROS: 'NoneType' object is not callable
+[2019-11-12 15:15:58.963013]: Error getting price for MNK: 'NoneType' object is not callable
+[2019-11-12 15:15:59.778549]: Error getting price for VRAY: 'NoneType' object is not callable
+[2019-11-12 15:15:59.866609]: Error getting price for PCG: 'NoneType' object is not callable
+[2019-11-12 15:16:00.740768]: Error getting price for HYRE: 'NoneType' object is not callable
+[2019-11-12 15:16:00.806814]: Error getting price for ENDP: 'NoneType' object is not callable
+[2019-11-12 15:22:36.230555]: Error getting price for MNK: 'NoneType' object is not callable
+[2019-11-12 15:22:37.016103]: Error getting price for PCG: 'NoneType' object is not callable
+[2019-11-12 15:22:38.063582]: Error getting price for EROS: 'NoneType' object is not callable
+[2019-11-12 15:23:30.409208]: Error getting price for EROS: 'NoneType' object is not callable
+[2019-11-12 15:23:30.480013]: Error getting price for MNK: 'NoneType' object is not callable
+[2019-11-12 15:23:31.167201]: Error getting price for PCG: 'NoneType' object is not callable
+[2019-11-12 15:23:51.589324]: Error getting price for MNK: 'NoneType' object is not callable
+[2019-11-12 15:23:52.247357]: Error getting price for PCG: 'NoneType' object is not callable
+[2019-11-12 15:23:52.950505]: Error getting price for EROS: 'NoneType' object is not callable
+[2019-11-12 15:23:54.757439]: Error getting price for HYRE: 'NoneType' object is not callable
+[2019-11-12 15:42:43.367945]: Processed EROS
+[2019-11-12 15:42:43.447834]: Processed MNK
+[2019-11-12 15:42:43.799346]: Processed EROS
+[2019-11-12 15:42:43.878680]: Processed MNK
+[2019-11-12 15:42:44.324248]: Processed MNK
+[2019-11-12 15:42:44.766829]: Processed MNK
+[2019-11-12 15:42:45.206542]: Processed MNK
+[2019-11-12 15:42:45.551800]: Processed MNK
+[2019-11-12 15:42:46.183095]: Processed MNK
+[2019-11-12 15:42:47.028834]: Processed WLL
+[2019-11-12 15:42:47.681771]: Processed WLL
+[2019-11-12 15:42:48.098472]: Processed WLL
+[2019-11-12 15:42:48.638815]: Processed WLL
+[2019-11-12 15:42:49.116487]: Processed WLL
+[2019-11-12 15:42:49.661666]: Processed FTR
+[2019-11-12 15:42:49.748198]: Processed WLL
+[2019-11-12 15:42:50.192115]: Processed WLL
+[2019-11-12 15:42:50.193215]: Processed FTR
+[2019-11-12 15:42:51.182142]: Processed AGRX
+[2019-11-12 15:42:51.514799]: Processed AGRX
+[2019-11-12 15:42:52.805815]: Processed FLNT
+[2019-11-12 15:42:53.365584]: Processed LPCN
+[2019-11-12 15:42:53.397195]: Processed FLNT
+[2019-11-12 15:42:54.158218]: Processed LPCN
+[2019-11-12 15:43:48.233831]: Processed MNK
+[2019-11-12 15:43:48.469161]: Processed EROS
+[2019-11-12 15:43:48.675975]: Processed MNK
+[2019-11-12 15:43:48.841213]: Processed EROS
+[2019-11-12 15:43:49.084678]: Processed MNK
+[2019-11-12 15:43:49.596508]: Processed MNK
+[2019-11-12 15:43:50.049575]: Processed MNK
+[2019-11-12 15:43:50.526355]: Processed WLL
+[2019-11-12 15:43:50.613364]: Processed MNK
+[2019-11-12 15:43:51.041784]: Processed MNK
+[2019-11-12 15:43:51.259060]: Processed WLL
+[2019-11-12 15:43:51.885427]: Processed WLL
+[2019-11-12 15:43:52.523101]: Processed FTR
+[2019-11-12 15:43:52.544406]: Processed WLL
+[2019-11-12 15:43:53.176027]: Processed WLL
+[2019-11-12 15:43:53.237385]: Processed FTR
+[2019-11-12 15:43:53.894684]: Processed WLL
+[2019-11-12 15:43:54.517921]: Processed WLL
+[2019-11-12 15:43:54.522716]: Processed LPCN
+[2019-11-12 15:43:54.862581]: Processed LPCN
+[2019-11-12 15:43:55.913096]: Processed AGRX
+[2019-11-12 15:43:56.018236]: Processed FLNT
+[2019-11-12 15:43:56.329227]: Processed AGRX
+[2019-11-12 15:43:56.523036]: Processed FLNT
+[2019-11-12 15:44:23.263117]: Processed MNK
+[2019-11-12 15:44:23.480387]: Processed EROS
+[2019-11-12 15:44:23.778841]: Processed MNK
+[2019-11-12 15:44:24.100681]: Processed EROS
+[2019-11-12 15:44:24.440234]: Processed MNK
+[2019-11-12 15:44:24.956233]: Processed MNK
+[2019-11-12 15:44:25.505896]: Processed MNK
+[2019-11-12 15:44:25.599107]: Processed WLL
+[2019-11-12 15:44:26.033952]: Processed MNK
+[2019-11-12 15:44:26.590339]: Processed MNK
+[2019-11-12 15:44:26.763412]: Processed WLL
+[2019-11-12 15:44:27.419559]: Processed WLL
+[2019-11-12 15:44:27.764055]: Processed FTR
+[2019-11-12 15:44:27.955884]: Processed WLL
+[2019-11-12 15:44:28.265391]: Processed FTR
+[2019-11-12 15:44:28.554592]: Processed WLL
+[2019-11-12 15:44:29.057320]: Processed WLL
+[2019-11-12 15:44:29.627355]: Processed WLL
+[2019-11-12 15:44:30.005396]: Processed LPCN
+[2019-11-12 15:44:30.420362]: Processed LPCN
+[2019-11-12 15:44:30.704838]: Processed AGRX
+[2019-11-12 15:44:31.219208]: Processed AGRX
+[2019-11-12 15:44:31.555131]: Processed FLNT
+[2019-11-12 15:44:32.069203]: Processed FLNT
+[2019-11-12 15:45:03.030186]: Processed MNK
+[2019-11-12 15:45:03.443586]: Processed MNK
+[2019-11-12 15:45:03.746644]: Processed EROS
+[2019-11-12 15:45:03.910918]: Processed MNK
+[2019-11-12 15:45:04.268063]: Processed EROS
+[2019-11-12 15:45:04.389012]: Processed MNK
+[2019-11-12 15:45:04.797240]: Processed MNK
+[2019-11-12 15:45:05.275979]: Processed MNK
+[2019-11-12 15:45:05.781347]: Processed MNK
+[2019-11-12 15:45:05.815184]: Processed WLL
+[2019-11-12 15:45:06.642081]: Processed WLL
+[2019-11-12 15:45:07.248833]: Processed WLL
+[2019-11-12 15:45:07.327492]: Processed FTR
+[2019-11-12 15:45:07.811536]: Processed WLL
+[2019-11-12 15:45:07.984792]: Processed FTR
+[2019-11-12 15:45:08.322859]: Processed WLL
+[2019-11-12 15:45:08.828183]: Processed WLL
+[2019-11-12 15:45:09.209438]: Processed LPCN
+[2019-11-12 15:45:09.309852]: Processed WLL
+[2019-11-12 15:45:09.777775]: Processed LPCN
+[2019-11-12 15:45:10.638412]: Processed AGRX
+[2019-11-12 15:45:10.806441]: Processed FLNT
+[2019-11-12 15:45:11.173701]: Processed AGRX
+[2019-11-12 15:45:11.243283]: Processed FLNT
+[2019-11-12 15:46:01.306133]: Processed EROS
+[2019-11-12 15:46:01.744617]: Processed EROS
+[2019-11-12 15:46:01.953438]: Processed MNK
+[2019-11-12 15:46:02.817413]: Processed MNK
+[2019-11-12 15:46:03.196572]: Processed WLL
+[2019-11-12 15:46:03.355692]: Processed MNK
+[2019-11-12 15:46:03.867135]: Processed MNK
+[2019-11-12 15:46:03.970284]: Processed WLL
+[2019-11-12 15:46:04.535352]: Processed MNK
+[2019-11-12 15:46:04.562670]: Processed WLL
+[2019-11-12 15:46:05.049575]: Processed MNK
+[2019-11-12 15:46:05.118346]: Processed WLL
+[2019-11-12 15:46:05.540935]: Processed MNK
+[2019-11-12 15:46:05.667054]: Processed WLL
+[2019-11-12 15:46:06.390218]: Processed WLL
+[2019-11-12 15:46:06.985496]: Processed WLL
+[2019-11-12 15:46:07.015602]: Processed FTR
+[2019-11-12 15:46:07.576437]: Processed FTR
+[2019-11-12 15:46:08.105054]: Processed LPCN
+[2019-11-12 15:46:08.533244]: Processed LPCN
+[2019-11-12 15:46:09.721014]: Processed AGRX
+[2019-11-12 15:46:09.845131]: Processed FLNT
+[2019-11-12 15:46:10.340202]: Processed AGRX
+[2019-11-12 15:46:10.361686]: Processed FLNT
+[2019-11-12 15:47:35.305403]: Processed EROS
+[2019-11-12 15:47:35.400480]: Processed MNK
+[2019-11-12 15:47:35.833931]: Processed EROS
+[2019-11-12 15:47:35.986135]: Processed MNK
+[2019-11-12 15:47:36.548645]: Processed MNK
+[2019-11-12 15:47:37.038955]: Processed MNK
+[2019-11-12 15:47:37.574974]: Processed MNK
+[2019-11-12 15:47:37.941110]: Processed MNK
+[2019-11-12 15:47:38.444925]: Processed MNK
+[2019-11-12 15:47:38.955989]: Processed WLL
+[2019-11-12 15:47:39.697933]: Processed WLL
+[2019-11-12 15:47:40.209319]: Processed WLL
+[2019-11-12 15:47:40.750446]: Processed WLL
+[2019-11-12 15:47:41.314495]: Processed WLL
+[2019-11-12 15:47:41.454550]: Processed FTR
+[2019-11-12 15:47:41.911335]: Processed WLL
+[2019-11-12 15:47:41.973172]: Processed FTR
+[2019-11-12 15:47:42.334926]: Processed WLL
+[2019-11-12 15:47:43.223157]: Processed LPCN
+[2019-11-12 15:47:43.608609]: Processed AGRX
+[2019-11-12 15:47:43.681341]: Processed LPCN
+[2019-11-12 15:47:44.058926]: Processed AGRX
+[2019-11-12 15:47:46.626914]: Processed FLNT
+[2019-11-12 15:47:47.125554]: Processed FLNT
+[2019-11-12 16:00:05.050766]: Error getting price for EROS: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:00:05.298655]: Error getting price for MNK: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:00:06.274445]: Error getting price for PCG: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:00:06.337295]: Error getting price for VRAY: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:00:06.925270]: Error getting price for HYRE: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:00:09.041460]: Error getting price for ENDP: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:00:09.534558]: Error getting price for WLL: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:00:10.995611]: Error getting price for FTR: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:00:12.643044]: Processed INFN
+[2019-11-12 16:00:12.682567]: Processed GPRO
+[2019-11-12 16:00:13.186786]: Processed GPRO
+[2019-11-12 16:00:13.210191]: Processed INFN
+[2019-11-12 16:00:13.762602]: Processed GPRO
+[2019-11-12 16:00:13.842972]: Processed INFN
+[2019-11-12 16:00:14.220065]: Processed GPRO
+[2019-11-12 16:00:14.275703]: Processed INFN
+[2019-11-12 16:00:14.835802]: Processed GPRO
+[2019-11-12 16:00:14.842934]: Processed INFN
+[2019-11-12 16:00:15.390160]: Processed GPRO
+[2019-11-12 16:00:15.408166]: Processed INFN
+[2019-11-12 16:00:15.790932]: Processed GPRO
+[2019-11-12 16:00:15.952304]: Processed INFN
+[2019-11-12 16:00:16.648784]: Processed LPCN
+[2019-11-12 16:00:17.111701]: Processed LPCN
+[2019-11-12 16:00:17.984487]: Error getting price for FLNT: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:00:18.024508]: Error getting price for AGRX: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:00:18.950787]: Error getting price for MDR: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:00:20.090544]: Processed AUPH
+[2019-11-12 16:00:20.452145]: Processed AUPH
+[2019-11-12 16:00:22.461886]: Error getting price for LXU: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:01:26.739633]: Error getting price for EROS: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:01:26.766814]: Error getting price for MNK: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:01:27.574448]: Error getting price for PCG: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:01:28.273257]: Processed VRAY
+[2019-11-12 16:01:28.469703]: Error getting price for HYRE: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:01:28.894400]: Processed VRAY
+[2019-11-12 16:01:29.287503]: Error getting price for WLL: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:01:29.764339]: Error getting price for FTR: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:01:31.056699]: Processed GPRO
+[2019-11-12 16:01:31.278424]: Processed INFN
+[2019-11-12 16:01:31.505829]: Processed GPRO
+[2019-11-12 16:01:31.719706]: Processed INFN
+[2019-11-12 16:01:31.958327]: Processed GPRO
+[2019-11-12 16:01:32.441841]: Processed GPRO
+[2019-11-12 16:01:32.578488]: Processed INFN
+[2019-11-12 16:01:33.000672]: Processed GPRO
+[2019-11-12 16:01:33.034513]: Processed INFN
+[2019-11-12 16:01:33.677518]: Processed INFN
+[2019-11-12 16:01:33.695345]: Processed GPRO
+[2019-11-12 16:01:34.231920]: Processed GPRO
+[2019-11-12 16:01:34.287864]: Processed INFN
+[2019-11-12 16:01:34.814687]: Processed INFN
+[2019-11-12 16:01:35.466730]: Processed LPCN
+[2019-11-12 16:01:35.978138]: Processed LPCN
+[2019-11-12 16:01:36.704127]: Error getting price for FLNT: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:01:37.762913]: Error getting price for LXU: 'NoneType' object has no attribute 'string'
+[2019-11-12 16:01:40.837051]: Processed AGRX
+[2019-11-12 16:01:41.254752]: Processed AGRX
+[2019-11-12 17:09:12.928322]: Processed MNK
+[2019-11-12 17:09:16.349469]: Processed MNK
+[2019-11-12 17:09:16.813961]: Processed EROS
+[2019-11-12 17:09:16.911726]: Processed MNK
+[2019-11-12 17:09:17.194966]: Processed EROS
+[2019-11-12 17:09:17.467948]: Processed MNK
+[2019-11-12 17:09:17.912593]: Processed MNK
+[2019-11-12 17:09:18.370511]: Processed MNK
+[2019-11-12 17:09:18.935765]: Processed MNK
+[2019-11-12 17:09:19.118618]: Processed WLL
+[2019-11-12 17:09:19.404653]: Processed MNK
+[2019-11-12 17:09:19.713433]: Processed WLL
+[2019-11-12 17:09:20.275086]: Processed WLL
+[2019-11-12 17:09:20.940841]: Processed WLL
+[2019-11-12 17:09:21.407563]: Processed WLL
+[2019-11-12 17:09:21.529867]: Processed FTR
+[2019-11-12 17:09:22.007473]: Processed WLL
+[2019-11-12 17:09:22.045724]: Processed FTR
+[2019-11-12 17:09:22.505457]: Processed WLL
+[2019-11-12 17:09:23.703773]: Processed LPCN
+[2019-11-12 17:09:24.101048]: Processed AGRX
+[2019-11-12 17:09:24.236226]: Processed LPCN
+[2019-11-12 17:09:24.723200]: Processed AGRX
+[2019-11-12 17:09:25.369025]: Processed FLNT
+[2019-11-12 17:09:25.864575]: Processed FLNT
+[2019-11-12 17:10:02.688063]: Processed MNK
+[2019-11-12 17:10:03.089543]: Processed MNK
+[2019-11-12 17:10:03.192650]: Processed EROS
+[2019-11-12 17:10:03.605577]: Processed MNK
+[2019-11-12 17:10:03.696906]: Processed EROS
+[2019-11-12 17:10:04.080481]: Processed MNK
+[2019-11-12 17:10:04.530996]: Processed MNK
+[2019-11-12 17:10:05.192458]: Processed MNK
+[2019-11-12 17:10:05.208272]: Processed WLL
+[2019-11-12 17:10:05.528144]: Processed MNK
+[2019-11-12 17:10:05.867617]: Processed WLL
+[2019-11-12 17:10:06.483633]: Processed WLL
+[2019-11-12 17:10:07.002973]: Processed WLL
+[2019-11-12 17:10:07.066091]: Processed FTR
+[2019-11-12 17:10:07.566370]: Processed WLL
+[2019-11-12 17:10:07.635284]: Processed FTR
+[2019-11-12 17:10:08.287876]: Processed WLL
+[2019-11-12 17:10:08.655744]: Processed WLL
+[2019-11-12 17:10:08.746579]: Processed LPCN
+[2019-11-12 17:10:09.401985]: Processed LPCN
+[2019-11-12 17:10:09.943622]: Processed AGRX
+[2019-11-12 17:10:10.404963]: Processed AGRX
+[2019-11-12 17:10:10.620601]: Processed FLNT
+[2019-11-12 17:10:11.049441]: Processed FLNT
+[2019-11-12 17:11:32.566997]: Processed EROS
+[2019-11-12 17:11:32.653315]: Processed MNK
+[2019-11-12 17:11:33.190270]: Processed EROS
+[2019-11-12 17:11:33.266548]: Processed MNK
+[2019-11-12 17:11:33.832786]: Processed MNK
+[2019-11-12 17:11:34.378178]: Processed MNK
+[2019-11-12 17:11:34.848701]: Processed MNK
+[2019-11-12 17:11:35.393351]: Processed WLL
+[2019-11-12 17:11:35.450733]: Processed MNK
+[2019-11-12 17:11:35.916201]: Processed MNK
+[2019-11-12 17:11:36.327812]: Processed WLL
+[2019-11-12 17:11:37.377455]: Processed FTR
+[2019-11-12 17:11:37.377799]: Processed WLL
+[2019-11-12 17:11:38.032376]: Processed FTR
+[2019-11-12 17:11:38.077212]: Processed WLL
+[2019-11-12 17:11:38.764869]: Processed WLL
+[2019-11-12 17:11:39.232438]: Processed WLL
+[2019-11-12 17:11:39.732466]: Processed LPCN
+[2019-11-12 17:11:39.783341]: Processed WLL
+[2019-11-12 17:11:40.344494]: Processed LPCN
+[2019-11-12 17:11:41.127745]: Processed AGRX
+[2019-11-12 17:11:41.464911]: Processed AGRX
+[2019-11-12 17:11:41.679640]: Processed FLNT
+[2019-11-12 17:11:42.056626]: Processed FLNT
+[2019-11-12 17:12:46.876367]: Processed EROS
+[2019-11-12 17:12:47.003739]: Processed MNK
+[2019-11-12 17:12:47.217531]: Processed EROS
+[2019-11-12 17:12:47.533488]: Processed MNK
+[2019-11-12 17:12:48.077356]: Processed MNK
+[2019-11-12 17:12:48.652984]: Processed WLL
+[2019-11-12 17:12:48.705112]: Processed MNK
+[2019-11-12 17:12:49.135113]: Processed MNK
+[2019-11-12 17:12:49.443506]: Processed WLL
+[2019-11-12 17:12:49.586850]: Processed MNK
+[2019-11-12 17:12:50.017503]: Processed MNK
+[2019-11-12 17:12:50.278013]: Processed WLL
+[2019-11-12 17:12:50.721222]: Processed WLL
+[2019-11-12 17:12:51.248648]: Processed WLL
+[2019-11-12 17:12:51.766793]: Processed WLL
+[2019-11-12 17:12:52.284996]: Processed WLL
+[2019-11-12 17:12:53.130303]: Processed FTR
+[2019-11-12 17:12:53.668044]: Processed FTR
+[2019-11-12 17:12:54.929779]: Processed AGRX
+[2019-11-12 17:12:55.232222]: Processed LPCN
+[2019-11-12 17:12:55.478181]: Processed AGRX
+[2019-11-12 17:12:55.642851]: Processed LPCN
+[2019-11-12 17:12:56.482133]: Processed FLNT
+[2019-11-12 17:12:56.987860]: Processed FLNT
+[2019-11-12 17:20:26.973378]: Processed MNK
+[2019-11-12 17:20:27.004900]: Processed EROS
+[2019-11-12 17:20:27.466365]: Processed EROS
+[2019-11-12 17:20:27.534544]: Processed MNK
+[2019-11-12 17:20:28.372959]: Processed MNK
+[2019-11-12 17:20:28.887436]: Processed MNK
+[2019-11-12 17:20:29.100988]: Processed WLL
+[2019-11-12 17:20:29.288859]: Processed MNK
+[2019-11-12 17:20:29.832410]: Processed WLL
+[2019-11-12 17:20:29.881490]: Processed MNK
+[2019-11-12 17:20:30.446607]: Processed MNK
+[2019-11-12 17:20:30.535109]: Processed WLL
+[2019-11-12 17:20:31.076072]: Processed WLL
+[2019-11-12 17:20:31.621914]: Processed WLL
+[2019-11-12 17:20:31.921974]: Processed FTR
+[2019-11-12 17:20:32.163093]: Processed WLL
+[2019-11-12 17:20:32.459301]: Processed FTR
+[2019-11-12 17:20:32.710837]: Processed WLL
+[2019-11-12 17:20:34.194202]: Processed LPCN
+[2019-11-12 17:20:34.246355]: Processed AGRX
+[2019-11-12 17:20:34.620539]: Processed LPCN
+[2019-11-12 17:20:34.747589]: Processed AGRX
+[2019-11-12 17:20:35.721473]: Processed FLNT
+[2019-11-12 17:20:36.195352]: Processed FLNT
+[2019-11-12 17:21:56.421691]: Processed EROS
+[2019-11-12 17:21:56.934192]: Processed EROS
+[2019-11-12 17:21:57.106700]: Processed MNK
+[2019-11-12 17:21:57.514886]: Processed MNK
+[2019-11-12 17:21:58.127724]: Processed MNK
+[2019-11-12 17:21:58.765527]: Processed MNK
+[2019-11-12 17:21:58.819395]: Processed WLL
+[2019-11-12 17:21:59.332174]: Processed MNK
+[2019-11-12 17:21:59.555428]: Processed WLL
+[2019-11-12 17:21:59.790608]: Processed MNK
+[2019-11-12 17:22:00.081600]: Processed WLL
+[2019-11-12 17:22:00.470078]: Processed MNK
+[2019-11-12 17:22:00.559677]: Processed WLL
+[2019-11-12 17:22:00.928373]: Processed WLL
+[2019-11-12 17:22:01.369767]: Processed WLL
+[2019-11-12 17:22:01.849312]: Processed WLL
+[2019-11-12 17:22:02.990711]: Processed LPCN
+[2019-11-12 17:22:03.384317]: Processed LPCN
+[2019-11-12 17:22:03.711223]: Processed FTR
+[2019-11-12 17:22:04.217250]: Processed FTR
+[2019-11-12 17:22:04.497321]: Processed AGRX
+[2019-11-12 17:22:05.056099]: Processed AGRX
+[2019-11-12 17:22:05.429654]: Processed FLNT
+[2019-11-12 17:22:05.822192]: Processed FLNT
+[2019-11-12 17:22:51.187840]: Processed EROS
+[2019-11-12 17:22:51.493718]: Processed MNK
+[2019-11-12 17:22:51.707058]: Processed EROS
+[2019-11-12 17:22:52.023660]: Processed MNK
+[2019-11-12 17:22:52.592463]: Processed MNK
+[2019-11-12 17:22:53.110995]: Processed MNK
+[2019-11-12 17:22:53.173325]: Processed WLL
+[2019-11-12 17:22:53.474534]: Processed MNK
+[2019-11-12 17:22:53.918783]: Processed WLL
+[2019-11-12 17:22:53.993929]: Processed MNK
+[2019-11-12 17:22:54.459157]: Processed MNK
+[2019-11-12 17:22:54.552254]: Processed WLL
+[2019-11-12 17:22:55.161465]: Processed WLL
+[2019-11-12 17:22:55.841784]: Processed WLL
+[2019-11-12 17:22:56.262842]: Processed FTR
+[2019-11-12 17:22:56.360662]: Processed WLL
+[2019-11-12 17:22:56.621809]: Processed FTR
+[2019-11-12 17:22:56.802575]: Processed WLL
+[2019-11-12 17:22:58.913052]: Processed AGRX
+[2019-11-12 17:22:58.940433]: Processed LPCN
+[2019-11-12 17:22:59.400829]: Processed LPCN
+[2019-11-12 17:22:59.421939]: Processed AGRX
+[2019-11-12 17:23:00.534199]: Processed FLNT
+[2019-11-12 17:23:01.080423]: Processed FLNT
+[2019-11-12 17:23:46.642052]: Processed EROS
+[2019-11-12 17:23:46.658950]: Processed MNK
+[2019-11-12 17:23:47.083073]: Processed MNK
+[2019-11-12 17:23:47.177979]: Processed EROS
+[2019-11-12 17:23:47.526923]: Processed MNK
+[2019-11-12 17:23:48.105310]: Processed MNK
+[2019-11-12 17:23:48.513335]: Processed MNK
+[2019-11-12 17:23:48.830617]: Processed WLL
+[2019-11-12 17:23:48.961586]: Processed MNK
+[2019-11-12 17:23:49.422005]: Processed WLL
+[2019-11-12 17:23:49.451582]: Processed MNK
+[2019-11-12 17:23:50.017674]: Processed WLL
+[2019-11-12 17:23:50.453646]: Processed WLL
+[2019-11-12 17:23:50.708789]: Processed FTR
+[2019-11-12 17:23:50.955687]: Processed WLL
+[2019-11-12 17:23:51.206686]: Processed FTR
+[2019-11-12 17:23:51.391388]: Processed WLL
+[2019-11-12 17:23:52.036342]: Processed WLL
+[2019-11-12 17:23:52.373809]: Processed LPCN
+[2019-11-12 17:23:52.762018]: Processed LPCN
+[2019-11-12 17:23:53.076892]: Processed AGRX
+[2019-11-12 17:23:53.626840]: Processed AGRX
+[2019-11-12 17:23:54.040935]: Processed FLNT
+[2019-11-12 17:23:54.378741]: Processed FLNT
+[2019-11-12 17:25:10.454017]: Processed MNK
+[2019-11-12 17:25:10.668272]: Processed EROS
+[2019-11-12 17:25:10.874740]: Processed MNK
+[2019-11-12 17:25:11.248123]: Processed EROS
+[2019-11-12 17:25:11.426394]: Processed MNK
+[2019-11-12 17:25:12.046227]: Processed MNK
+[2019-11-12 17:25:12.330524]: Processed VRAY
+[2019-11-12 17:25:12.570481]: Processed MNK
+[2019-11-12 17:25:12.834678]: Processed VRAY
+[2019-11-12 17:25:13.010454]: Processed MNK
+[2019-11-12 17:25:13.526265]: Processed MNK
+[2019-11-12 17:25:14.465983]: Processed ENDP
+[2019-11-12 17:25:14.856304]: Processed ENDP
+[2019-11-12 17:25:15.536983]: Processed ENDP
+[2019-11-12 17:25:15.597768]: Processed PCG
+[2019-11-12 17:25:15.973192]: Processed ENDP
+[2019-11-12 17:25:16.439460]: Processed ENDP
+[2019-11-12 17:25:16.478864]: Processed PCG
+[2019-11-12 17:25:17.036172]: Processed PCG
+[2019-11-12 17:25:17.137555]: Processed ENDP
+[2019-11-12 17:25:17.706449]: Error getting data for ENDP on week 7:'NoneType' object has no attribute 'contents'
+[2019-11-12 17:25:17.706643]: Processed ENDP
+[2019-11-12 17:25:17.753355]: Processed PCG
+[2019-11-12 17:25:18.404420]: Processed PCG
+[2019-11-12 17:25:19.089156]: Processed PCG
+[2019-11-12 17:25:19.492899]: Processed PCG
+[2019-11-12 17:25:21.338433]: Processed HYRE
+[2019-11-12 17:25:21.447534]: Processed WLL
+[2019-11-12 17:25:21.745939]: Processed HYRE
+[2019-11-12 17:25:22.057510]: Processed WLL
+[2019-11-12 17:25:22.751555]: Processed WLL
+[2019-11-12 17:25:23.279290]: Processed WLL
+[2019-11-12 17:25:23.430075]: Processed FTR
+[2019-11-12 17:25:23.859892]: Processed WLL
+[2019-11-12 17:25:24.314482]: Processed WLL
+[2019-11-12 17:25:24.380748]: Processed FTR
+[2019-11-12 17:25:24.788169]: Processed WLL
+[2019-11-12 17:25:25.825984]: Processed GPRO
+[2019-11-12 17:25:26.350586]: Processed GPRO
+[2019-11-12 17:25:26.381042]: Processed INFN
+[2019-11-12 17:25:26.997060]: Processed INFN
+[2019-11-12 17:25:27.018468]: Processed GPRO
+[2019-11-12 17:25:27.467482]: Processed INFN
+[2019-11-12 17:25:27.577239]: Processed GPRO
+[2019-11-12 17:25:28.027185]: Processed INFN
+[2019-11-12 17:25:28.138429]: Processed GPRO
+[2019-11-12 17:25:28.441315]: Processed INFN
+[2019-11-12 17:25:28.866487]: Processed GPRO
+[2019-11-12 17:25:28.899710]: Processed INFN
+[2019-11-12 17:25:29.268919]: Processed GPRO
+[2019-11-12 17:25:29.418380]: Processed INFN
+[2019-11-12 17:25:30.758478]: Processed CHK
+[2019-11-12 17:25:31.190060]: Processed DF
+[2019-11-12 17:25:31.238920]: Processed CHK
+[2019-11-12 17:25:31.918017]: Processed DF
+[2019-11-12 17:25:31.939112]: Processed CHK
+[2019-11-12 17:25:32.440286]: Processed CHK
+[2019-11-12 17:25:33.006588]: Processed CHK
+[2019-11-12 17:25:33.509706]: Processed CHK
+[2019-11-12 17:25:33.735264]: Processed LPCN
+[2019-11-12 17:25:34.228924]: Processed CHK
+[2019-11-12 17:25:34.377484]: Processed LPCN
+[2019-11-12 17:25:35.763119]: Processed AGRX
+[2019-11-12 17:25:35.923434]: Processed MNKD
+[2019-11-12 17:25:36.290540]: Processed AGRX
+[2019-11-12 17:25:36.474419]: Processed MNKD
+[2019-11-12 17:25:36.982526]: Processed MNKD
+[2019-11-12 17:25:37.489988]: Processed MNKD
+[2019-11-12 17:25:37.657134]: Processed MDR
+[2019-11-12 17:25:37.913844]: Processed MNKD
+[2019-11-12 17:25:38.161290]: Processed MDR
+[2019-11-12 17:25:38.364601]: Processed MNKD
+[2019-11-12 17:25:38.812071]: Error getting data for MNKD on week 7:'NoneType' object has no attribute 'contents'
+[2019-11-12 17:25:38.816641]: Processed MNKD
+[2019-11-12 17:25:39.422561]: Processed AUPH
+[2019-11-12 17:25:40.048234]: Processed AUPH
+[2019-11-12 17:25:40.814569]: Processed DO
+[2019-11-12 17:25:41.417816]: Processed DO
+[2019-11-12 17:25:41.796460]: Processed FLNT
+[2019-11-12 17:25:42.099131]: Processed FLNT
+[2019-11-12 17:25:44.005359]: Processed LXU
+[2019-11-12 17:25:44.431043]: Processed LXU
