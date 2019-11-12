@@ -4,8 +4,13 @@ from .utils import utc_timestamp
 def get_options(stock):
     with SQL() as c:
         data = c.get("SELECT * FROM options WHERE stock IN (SELECT id from stocks where name=\"" + str(stock) + "\")")
-        data["name"] = stock
     return data
+
+def get_option_data(option):
+  with SQL() as c:
+    data = c.get("SELECT * FROM options WHERE id=\"" + str(option) + "\"")
+
+  return data
 
 def get_stock_name(id):
     name = ""

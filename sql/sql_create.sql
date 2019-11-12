@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.62, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.27, for Linux (x86_64)
 --
 -- Host: localhost    Database: stocks
 -- ------------------------------------------------------
--- Server version	5.5.62
+-- Server version	5.7.27-0ubuntu0.18.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -25,15 +25,15 @@ DROP TABLE IF EXISTS `option_data`;
 CREATE TABLE `option_data` (
   `insert_time` datetime NOT NULL,
   `timestamp` bigint(20) NOT NULL,
-  `curr_price` float NOT NULL,
-  `last_price` float NOT NULL,
-  `bid` float NOT NULL,
-  `ask` float NOT NULL,
+  `curr_price` decimal(10,4) NOT NULL,
+  `last_price` decimal(10,4) NOT NULL,
+  `bid` decimal(10,4) NOT NULL,
+  `ask` decimal(10,4) NOT NULL,
   `volume` int(11) NOT NULL,
   `e_b` float DEFAULT NULL,
   `e_a` float DEFAULT NULL,
   `e_l` float DEFAULT NULL,
-  `break_even` float DEFAULT NULL,
+  `break_even` decimal(10,4) DEFAULT NULL,
   `volatility` float NOT NULL,
   `option_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -67,7 +67,7 @@ CREATE TABLE `stock_prices` (
   `insert_time` datetime NOT NULL,
   `stock` int(11) NOT NULL,
   `timestamp` bigint(20) NOT NULL,
-  `price` float NOT NULL
+  `price` decimal(10,4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -95,4 +95,4 @@ CREATE TABLE `stocks` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-12 17:44:46
+-- Dump completed on 2019-11-12 17:51:33
