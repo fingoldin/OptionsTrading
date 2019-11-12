@@ -1,4 +1,5 @@
 import time
+import datetime
 import math
 
 def generate_week_order(weeks, total_weeks):
@@ -35,7 +36,9 @@ def tof(v):
   return float(clean(v.string))
 
 def log(s):
-  print(s)
+  fp = open("/home/ec2-user/OptionsTrading/sql/log.txt","a")
+  fp.write("[" + str(datetime.datetime.now()) + "]: " + s + "\n")
+  fp.close()
 
 def utc_timestamp():
   return int(time.time())
