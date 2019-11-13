@@ -33,7 +33,6 @@ def log(s):
   fp = open("/home/ec2-user/OptionsTrading/sql/log.txt","a")
   fp.write("[" + str(datetime.datetime.now()) + "]: " + s + "\n")
   fp.close()
-  print(s)
 
 def toi(c, i):
   try:

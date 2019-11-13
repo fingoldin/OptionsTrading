@@ -20,7 +20,7 @@ class SQL:
     return False
 
   def lastid(self):
-    return self.conn.insert_id()
+    return self.cursor.lastrowid
 
 def sql_get_stocks():
   with SQL() as c:
