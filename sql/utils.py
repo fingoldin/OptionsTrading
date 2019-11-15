@@ -33,13 +33,14 @@ def log(s):
   fp = open("/home/ec2-user/OptionsTrading/sql/log.txt","a")
   fp.write("[" + str(datetime.datetime.now()) + "]: " + s + "\n")
   fp.close()
+  print(s)
 
 def toi(c, i):
   try:
     ret = int(clean(c[i].string))
   except Exception as e:
     log("Error in toi for " + str(c) + " on index " + str(i))
-    ret = 0
+    ret = -1
     pass
 
   return ret
@@ -49,7 +50,7 @@ def tof(c, i):
     ret = float(clean(c[i].string))
   except Exception as e:
     log("Error in tof for " + str(c) + " on index " + str(i))
-    ret = 0.0
+    ret = -1.0
     pass
 
   return ret
@@ -59,7 +60,7 @@ def tos(c, i):
     ret = c[i].string
   except Exception as e:
     log("Error in tos for " + str(c) + " on index " + str(i))
-    ret = ""
+    ret = "null"
     pass
 
   return ret

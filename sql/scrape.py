@@ -54,7 +54,7 @@ def scrape_options(stock):
         if not trows:
           raise ValueError("trows is None")
       except Exception as e:
-        utils.log("Error getting data for " + stock["name"] + " on week " + str(expire_dates[date_i]) + ":" + str(e))
+        utils.log("Error getting data for " + stock["name"] + " on week " + str(expire_dates[date_i]) + " (" + str(w) + "): " + str(e))
         continue
       for row in trows:
         try:
@@ -71,7 +71,7 @@ def scrape_options(stock):
             raise ValueError("strike_cont is None")
         except Exception as e:
           utils.log("Error getting strike container for " + stock["name"] + " on row: " + str(row))
-          strike_cont = ["0.0"]
+          strike_cont = ["-1.0"]
           pass
 
         last_date = utils.tos(contents, 1)
@@ -82,7 +82,8 @@ def scrape_options(stock):
         volume = utils.toi(contents, 8)
         implied_volatility = utils.tof(contents, 10)
 
-        if volume > volume_min:
+        if strike >= 0.0 and last_price >= 0.0 and bid >= 0.0 and ask >= 0.0 and
+           implied_volatility >= 0.0 and volume > volume_min and w > 0:
           profit_b = bid / w
           profit_a = ask / w
           profit_l = last_price / w
@@ -92,14 +93,14 @@ def scrape_options(stock):
             profit_a = (ask + strike - curr_price) / w
             profit_l = (last_price + strike - curr_price) / w
 
-          if curr_price != 0: 
+          if curr_price != 0.0: 
             e_b = profit_b / (curr_price)
             e_a = profit_a / (curr_price)
             e_l = profit_l / (curr_price)
           else:
-            e_b = 0.0
-            e_a = 0.0
-            e_l = 0.0
+            e_b = -1.0
+            e_a = -1.0
+            e_l = -1.0
 
           break_even = last_price / (curr_price * w)
           
@@ -118,7 +119,7 @@ def scrape_options(stock):
                   }
 
           out_data.append(data)
-      utils.log("Processed " + stock["name"])
+      utils.log("Processed " + stock["name"] + " on week " + str(expire_dates[date_i]) + " (" + str(w) + ")")
 
   return out_data
 
