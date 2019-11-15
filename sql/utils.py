@@ -40,6 +40,7 @@ def toi(c, i):
   except Exception as e:
     log("Error in toi for " + str(c) + " on index " + str(i))
     ret = 0
+    pass
 
   return ret
 
@@ -49,6 +50,7 @@ def tof(c, i):
   except Exception as e:
     log("Error in tof for " + str(c) + " on index " + str(i))
     ret = 0.0
+    pass
 
   return ret
 
@@ -58,6 +60,7 @@ def tos(c, i):
   except Exception as e:
     log("Error in tos for " + str(c) + " on index " + str(i))
     ret = ""
+    pass
 
   return ret
 

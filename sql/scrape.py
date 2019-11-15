@@ -17,6 +17,7 @@ def scrape_price(stock):
   except Exception as e:
     curr_price = -1.0
     utils.log("Error getting price for " + stock["name"] + ": " + str(e))
+    pass
     #if (str(e) == "HTTP Error 404: Not Found"):
     #  return timestamp, -1.0
 
@@ -54,6 +55,7 @@ def scrape_options(stock):
           raise ValueError("trows is None")
       except Exception as e:
         utils.log("Error getting data for " + stock["name"] + " on week " + str(expire_dates[date_i]) + ":" + str(e))
+        continue
       for row in trows:
         try:
           contents = row.contents
@@ -61,6 +63,7 @@ def scrape_options(stock):
             raise ValueError("contents is None")
         except Exception as e:
           utils.log("Error getting row data for " + stock["name"] + " on row: " + str(row))
+          continue
 
         try:
           strike_cont = contents[2].contents
@@ -68,6 +71,8 @@ def scrape_options(stock):
             raise ValueError("strike_cont is None")
         except Exception as e:
           utils.log("Error getting strike container for " + stock["name"] + " on row: " + str(row))
+          strike_cont = ["0.0"]
+          pass
 
         last_date = utils.tos(contents, 1)
         strike = utils.tof(strike_cont, 0)
