@@ -82,7 +82,7 @@ def scrape_options(stock):
         volume = utils.toi(contents, 8)
         implied_volatility = utils.tof(contents, 10)
 
-        if strike >= 0.0 and last_price >= 0.0 and bid >= 0.0 and ask >= 0.0 and
+        if strike >= 0.0 and last_price >= 0.0 and bid >= 0.0 and ask >= 0.0 and \
            implied_volatility >= 0.0 and volume > volume_min and w > 0:
           profit_b = bid / w
           profit_a = ask / w
