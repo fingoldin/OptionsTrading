@@ -53,8 +53,7 @@ def scrape_options(stock):
         if not trows:
           raise ValueError("trows is None")
       except Exception as e:
-        utils.log("Error getting data for " + stock["name"] + " on week " + str(w) + ":" + str(e))
-
+        utils.log("Error getting data for " + stock["name"] + " on week " + str(expire_dates[date_i]) + ":" + str(e))
       for row in trows:
         try:
           contents = row.contents

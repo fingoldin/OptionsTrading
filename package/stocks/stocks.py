@@ -8,7 +8,7 @@ def get_options(stock):
 
 def get_option_data(option):
   with SQL() as c:
-    data = c.get("SELECT * FROM options WHERE id=\"" + str(option) + "\"")
+    data = c.get("SELECT * FROM option_data WHERE option_id=\"" + str(option) + "\"")
 
   return data
 
