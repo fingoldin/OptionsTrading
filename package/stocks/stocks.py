@@ -35,3 +35,8 @@ def get_prices(stock):
     data = c.get("SELECT * FROM stock_prices WHERE stock IN (SELECT id from stocks where name=\"" + str(stock) + "\")")
 
   return data
+
+def get_all_stocks():
+  with SQL() as c:
+    data = c.get("SELECT * FROM stocks")
+  return data
